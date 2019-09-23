@@ -70,14 +70,23 @@ if(input$adjusted.unadjusted.yearonyear == "adjusted"){
                ncpes$Gender == "Both", ncpes$adjusted.unadjusted.yearonyear == input$adjusted.unadjusted.yearonyear & ncpes$Cancer.Type == "All Cancers" ) %>% 
       select(Question.Number,Question.Text,Number.of.responses,scored.percentage) %>% 
       datatable(rownames = FALSE, colnames = c("Question Number","Question","Number of Responses","Score"),
-                extensions = c('Buttons'),
+                extensions = c('Buttons',"Scroller"),
                 options = list(
-                  pageLength = 8,
+                  pageLength = 11,
                   dom = 'Bfrtip',
                   buttons = c('copy','csv', 'excel'),
-                  deferRender = TRUE
+                  deferRender = TRUE,
+                  scrollY = "700px",
+                  scrollCollapse = TRUE,
+                  paging = FALSE
                   ))
     
     overviewtable
   })
+
+  #####################################
+  ##       Page 2- yearonyear        ##
+  #####################################  
+  
+
 })

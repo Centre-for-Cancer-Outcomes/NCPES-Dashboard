@@ -16,15 +16,22 @@ body <- dashboardBody(
   tabItems(
     tabItem(tabName ="overview",
      fluidRow(
-       selectInput("adjusted.unadjusted.yearonyear","Adjusted/Unadjusted",choices = c("adjusted","unadjusted"), selected = "adjusted"),
+       box(selectInput("adjusted.unadjusted.yearonyear","Adjusted/Unadjusted",choices = c("adjusted","unadjusted"), selected = "adjusted"),
+          title = "Data Type", status = "info" )),
+     fluidRow(
        valueBoxOutput("overallnumber"),
        valueBoxOutput("Overallcare"),
        valueBoxOutput("overallsigdif")
      ),
      fluidRow(
-       box(plotOutput("oveallgraph",height = 800), title = "NCPES Results",status = "primary",solidHeader = TRUE),
-       box(DT::dataTableOutput("overalltable",height = 500),title = "NCPES Data Table",status = "success",solidHeader = TRUE)
-     ))
+       box(plotOutput("oveallgraph",height = 900), title = "NCPES Results",status = "primary",solidHeader = TRUE),
+       box(DT::dataTableOutput("overalltable",height = 900),title = "NCPES Data Table",status = "success",solidHeader = TRUE)
+     )),
+    tabItem(tabName = "timeseries",
+       box(selectInput("Question.Test","Question",choices = unique(factor(ncpes$Question.Text)),
+                       selected = "Before you were told you needed to go to hospital about cancer, how many times did you see
+                       your GP (family doctor) about the health problem caused by cancer?" )
+       ))
   )
 )
     

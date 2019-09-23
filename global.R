@@ -1,4 +1,6 @@
 ##load in data set for app
+
+
 ncpes<-read.csv("https://raw.githubusercontent.com/Centre-for-Cancer-Outcomes/NCPES-Dashboard/master/CPESDataset.csv",sep = ",", na.strings = "NA",
                 stringsAsFactors = FALSE)
 ncpes$qnum <- as.numeric(gsub("[a-zA-Z ]", "", ncpes$Question.Number))
@@ -20,6 +22,7 @@ ncpes$abrvperformance <- ifelse(ncpes$Performance.Rating == 1, "Above",
 library(shiny)
 library(shinydashboard)
 library(tidyverse)
+library(DT)
 
 ## set theme for ggplot
 theme_set(theme_classic())
