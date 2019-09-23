@@ -25,7 +25,7 @@ shinyServer(function(input, output,session) {
   value = paste0(ncpes$Number.of.responses[ncpes$Trust.Name == input$Trust.Name & ncpes$qnum == 59 & ncpes$Year == 2018 &
                               ncpes$Gender == "Both" & ncpes$IMD == "All" & ncpes$Cancer.Type == "All Cancers" &
                                 ncpes$adjusted.unadjusted.yearonyear == input$adjusted.unadjusted.yearonyear]),
-     "Number of Responses", icon = icon("users"), color = "navy"
+     "Number of Responses", icon = icon("users"), color = "yellow"
     )
   })
   
@@ -87,6 +87,40 @@ if(input$adjusted.unadjusted.yearonyear == "adjusted"){
   #####################################
   ##       Page 2- yearonyear        ##
   #####################################  
+##row 1
+##value box 
+  output$yearonyearcomp <- renderValueBox({
+    valueBox( 
+      value = paste0(ncpes$Significant.Change.2017.2018[ncpes$Trust.Name == input$Trust.Name & ncpes$Year == 2018 &
+                                               ncpes$Gender == "Both" & ncpes$IMD == "All" & ncpes$Cancer.Type == "All Cancers" &
+                                               ncpes$adjusted.unadjusted.yearonyear == "yearonyear" & ncpes$Question.Text == input$Question.Text]),
+      "Has the Question Score changes based on previous CPES", icon = icon("calendar-alt"), color = "blue"
+    )
+  })
   
-
+    output$yearonyearlongcomp <- renderValueBox({
+      valueBox( 
+        value = paste0(ncpes$SignificantChangeOverallyears[ncpes$Trust.Name == input$Trust.Name &  ncpes$Year == 2018 &
+                                                            ncpes$Gender == "Both" & ncpes$IMD == "All" & ncpes$Cancer.Type == "All Cancers" &
+                                                            ncpes$adjusted.unadjusted.yearonyear == "yearonyear" & ncpes$Question.Text == input$Question.Text]),
+        "Has the Question Score changes based on 2015 CPES", icon = icon("chart-line"), color = "green"
+      ) 
+  })  
+  
+  
+  
+##row 2  
+## graph
+  output$yearonyeargraph <- renderPlot({
+    yearonyeargraph <- ncpes %>% 
+      filter(ncpes$Geog == input$Geog & ncpes$Trust.Name == input$Trust.Name & ncpes$IMD == "All" &
+               ncpes$Gender == "Both", ncpes$adjusted.unadjusted.yearonyear == "yearonyear" & 
+               ncpes$Cancer.Type == "All Cancers" & ncpes$Question.Text == input$Question.Text) %>% 
+      select(Question.Number,Question.Text,Year,scored.percentage) %>% 
+      ggplot(aes(Year,scored.percentage)) + geom_bar(stat = "identity") 
+    
+    yearonyeargraph
+      
+  })
+ 
 })

@@ -7,6 +7,7 @@ header <- dashboardHeader(title = "NCPES 2018 Results",
 sidebar <- dashboardSidebar(sidebarMenu(
                              selectInput("Geog","Organization Type",choices = unique(factor(ncpes$Geog)), selected = "Trust"),
                              selectInput("Trust.Name","Organization Name", choices = "",selected = ""),
+                             selectInput("Question.Number","Question Number",choices = unique(factor(ncpes$Question.Number), multiple = TRUE) ),
                              menuItem("Overview Dashoard", tabName = "overview",icon = icon("dashboard")),
                              menuItem("Timeseries", tabName  = "timeseries" , icon = icon("chart-line")),
                              menuItem("By Cancer",tabName = "cancer",icon = icon("x-ray"))
@@ -28,9 +29,18 @@ body <- dashboardBody(
        box(DT::dataTableOutput("overalltable",height = 900),title = "NCPES Data Table",status = "success",solidHeader = TRUE)
      )),
     tabItem(tabName = "timeseries",
-       box(selectInput("Question.Test","Question",choices = unique(factor(ncpes$Question.Text)),
+            fluidRow(
+       box(selectInput("Question.Text","Question",choices = unique(factor(ncpes$Question.Text)),
                        selected = "Before you were told you needed to go to hospital about cancer, how many times did you see
                        your GP (family doctor) about the health problem caused by cancer?" )
+       ),
+       fluidRow(
+         valueBoxOutput("yearonyearcomp"),
+         valueBoxOutput("yearonyearlongcomp")
+       ),
+      fluidRow(
+        box(plotOutput("yearonyeargraph"), title = "CPES Results Over Time",status = "primary",solidHeader = TRUE)
+      )
        ))
   )
 )
