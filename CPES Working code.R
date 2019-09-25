@@ -119,3 +119,7 @@ ggpoverviewtable <- ncpes %>%
             ))
 
 ggpoverviewtable
+
+
+
+unique(ncpes$Question.Text)

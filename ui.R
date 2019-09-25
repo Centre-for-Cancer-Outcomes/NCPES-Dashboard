@@ -44,7 +44,7 @@ body <- dashboardBody(
      )),
     tabItem(tabName = "timeseries",
             fluidRow(
-       box(selectInput("Question.Text","Question",choices = unique(factor(ncpes$Question.Text)),
+       box(selectInput("Question.Text","Question",choices = unique(factor(ncpes$Question.Text[order(ncpes$Question.Number)])),
                        selected = "Before you were told you needed to go to hospital about cancer, how many times did you see
                        your GP (family doctor) about the health problem caused by cancer?" )
        ,width = 10)),
@@ -77,16 +77,21 @@ body <- dashboardBody(
             ),
     tabItem(tabName = "demographic",
           fluidRow(box(print("The Data needed for this page is only available for Cancer Alliances and National Data"),background = "maroon")),
-          fluidRow(box(radioGroupButtons("Demographic","",choices = c("Gendar","Deprivation","Cancer Type"), selected = "Gendar",
+          fluidRow(box(radioGroupButtons("Demographic","",choices = c("Gender","Deprivation","Cancer Type"), selected = "Gender",
                                          checkIcon = list(
                                            yes = tags$i(class = "fa fa-check-square", 
                                                         style = "color: steelblue"),
                                            no = tags$i(class = "fa fa-square-o", 
                                                        style = "color: steelblue")),justified = TRUE),
-                       title = "Data Type", status = "info" )),
-                   box(autocomplete_input("Question.Text2","",options  = unique(ncpes$Question.Text)),
+                       title = "Data Type", status = "info" ),
+                   box(selectInput("Question.Text2","Question",choices = unique(factor(ncpes$Question.Text[order(ncpes$Question.Number)])),
+                                   selected = "Before you were told you needed to go to hospital about cancer, how many times did you see
+                       your GP (family doctor) about the health problem caused by cancer?" ),
                                      title = "CPES Question", status = "info" 
-                   )
+                   )),
+          fluidRow(
+            plotOutput("compgraph")
+          )
           )
   ))
 

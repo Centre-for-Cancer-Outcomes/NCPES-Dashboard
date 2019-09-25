@@ -1,3 +1,11 @@
+##load in packages needed in UI and Server 
+library(shiny)
+library(shinydashboard)
+library(shinyWidgets)
+library(tidyverse)
+library(DT)
+library(dqshiny)
+
 ##load in data set for app
 ncpes<-read.csv("C:/Users/DEGAN001/Documents/GIT clones/COSD_Level2 App/NCPES Dashboard/CPESDataset.csv",sep = ",", na.strings = "NA",
                 stringsAsFactors = FALSE)
@@ -55,13 +63,7 @@ ncpes$Question.Number <- factor(ncpes$Question.Number, levels = c("Q1","Q2","Q5"
 ))
 
 
-##load in packages needed in UI and Server 
-library(shiny)
-library(shinydashboard)
-library(shinyWidgets)
-library(tidyverse)
-library(DT)
-library(dqshiny)
+
 
 ## set theme for ggplot
 theme_set(theme_classic())

@@ -156,7 +156,7 @@ if(input$adjusted.unadjusted.yearonyear == "adjusted"){
   })
 
   #####################################
-  ##       Page 2- Cancer Type       ##
+  ##       Page 3- Cancer Type       ##
   #####################################  
   output$cancertypenumber <- renderValueBox({
       valueBox( 
@@ -204,4 +204,31 @@ output$bycancertable <- DT::renderDataTable({
                 paging = FALSE
               ))
 })
+
+#####################################
+##       Page 4- Comparison       ##
+#####################################  
+output$compgraph <- renderPlot({
+  
+  if(input$Demographic == "Gender"){
+    
+    output$compgraph <- renderPlot({
+      comgraph <-  ncpes %>% 
+        filter(ncpes$Geog == input$Geog & ncpes$Trust.Name == input$Trust.Name & ncpes$IMD == "All" &
+                 ncpes$Gender %in% c("Male","Female"), ncpes$adjusted.unadjusted.yearonyear == "unadjusted" & 
+                 ncpes$Cancer.Type == "All Cancers"  & ncpes$Year == 2018 & ncpes$Question.Text == input$Question.Text2) %>% 
+        select(Question.Number,Question.Text,Gender,Number.of.responses,scored.percentage) %>% 
+        ggplot(aes(Gender,scored.percentage)) + geom_bar(stat = "identity")
+      
+      comgraph
+    })
+    
+  
+  }else if (input$Demographic == "Deprivation") {
+    
+  }else if (input$Demographic == "Cancer Type") {
+  
+  }
+})
+
 })
