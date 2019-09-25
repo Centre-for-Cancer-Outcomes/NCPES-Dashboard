@@ -1,7 +1,12 @@
 ## UIpage
 header <- dashboardHeader(title = "NCPES 2018 Results",
                           tags$li(class = "dropdown",tags$a(href ="https://github.com/Centre-for-Cancer-Outcomes?tab=repositories",icon("github"),
-                                                            "Source Code", target = "_blank")))
+                                                            "Source Code", target = "_blank")),
+                          tags$li(class = "dropdown",tags$a(href ="https://www.uclh.nhs.uk/OurServices/ServiceA-Z/Cancer/NCV/CCO/Pages/Home.aspx#targetText=The%20Centre%20for%20Cancer%20Outcomes,their%20treatment%20and%20care%20pathway.",icon("empire"),
+                                                            "Centre for Cancer Outcomes", target = "_blank")),
+                          tags$li(class = "dropdown",tags$a(href ="https://www.ncpes.co.uk/reports/2018-reports/local-reports-2018",icon("file-medical-alt"),
+                                                            "NCPES Reports", target = "_blank"))
+                          )
 
 
 sidebar <- dashboardSidebar(sidebarMenu(
@@ -91,6 +96,11 @@ body <- dashboardBody(
                    )),
           fluidRow(
             plotOutput("compgraph")
+          ),
+          fluidRow(
+            box(DT::dataTableOutput("comtable"),"CPES Data table", status = "success", solidHeader = TRUE),
+            valueBoxOutput("compvalueboxdif"),
+            valueBoxOutput("compvalueboxsig")
           )
           )
   ))

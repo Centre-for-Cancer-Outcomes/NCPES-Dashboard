@@ -95,7 +95,7 @@ if(input$adjusted.unadjusted.yearonyear == "adjusted"){
       value = paste0(ncpes$Significant.Change.2017.2018[ncpes$Trust.Name == input$Trust.Name & ncpes$Year == 2018 &
                                                ncpes$Gender == "Both" & ncpes$IMD == "All" & ncpes$Cancer.Type == "All Cancers" &
                                                ncpes$adjusted.unadjusted.yearonyear == "yearonyear" & ncpes$Question.Text == input$Question.Text]),
-      "Has the Question Score changes based on previous CPES", icon = icon("calendar-alt"), color = "blue"
+      "Has the Question Score changes based on the previous CPES", icon = icon("calendar-alt"), color = "blue"
     )
   })
   
@@ -171,7 +171,7 @@ if(input$adjusted.unadjusted.yearonyear == "adjusted"){
       value = paste0(ncpes$scored.percentage[ncpes$Trust.Name == input$Trust.Name & ncpes$qnum == 59 & ncpes$Year == 2018 &
                                                  ncpes$Gender == "Both" & ncpes$IMD == "All" & ncpes$Cancer.Type == input$Cancer.Type &
                                                  ncpes$adjusted.unadjusted.yearonyear == "unadjusted"]),
-      "Number of Responses", icon = icon("thermometer-half"), color = "blue"
+      "Overall, how would you rate your care?", icon = icon("thermometer-half"), color = "blue"
     )
   })
  output$bycancergraph <- renderPlot({
@@ -222,8 +222,45 @@ output$compgraph <- renderPlot({
       
       comgraph
     })
-    
-  
+    output$comtable <- DT::renderDataTable({
+      comptable <- ncpes %>% 
+        filter(ncpes$Geog == input$Geog & ncpes$Trust.Name == input$Trust.Name & ncpes$IMD == "All" &
+                 ncpes$Gender %in% c("Male","Female"), ncpes$adjusted.unadjusted.yearonyear == "unadjusted" & 
+                 ncpes$Cancer.Type == "All Cancers"  & ncpes$Year == 2018 & ncpes$Question.Text == input$Question.Text2) %>% 
+        select(Question.Number,Question.Text,Gender,Number.of.responses,scored.percentage) %>% 
+        datatable(rownames = FALSE, colnames = c("Question Number","Question","Gender","Number of Responses","Score"),
+                  extensions = c('Buttons',"Scroller"),
+                  options = list(
+                    pageLength = 11,
+                    dom = 'Bfrtip',
+                    buttons = c('copy','csv', 'excel'),
+                    deferRender = TRUE,
+                    scrollY = "700px",
+                    scrollCollapse = TRUE,
+                    paging = FALSE
+                  ))
+    })    
+  output$compvalueboxdif <-renderValueBox({
+    valueBox(
+      value = ncpes$scored.percentage[ncpes$Geog == input$Geog & ncpes$Trust.Name == input$Trust.Name & ncpes$IMD == "All" &
+                                      ncpes$Gender == "Male" & ncpes$adjusted.unadjusted.yearonyear == "unadjusted" & 
+                                      ncpes$Cancer.Type == "All Cancers"  & ncpes$Year == 2018 & ncpes$Question.Text == input$Question.Text2] -
+        ncpes$scored.percentage[ncpes$Geog == input$Geog & ncpes$Trust.Name == input$Trust.Name & ncpes$IMD == "All" &
+                                  ncpes$Gender == "Female" & ncpes$adjusted.unadjusted.yearonyear == "unadjusted" & 
+                                  ncpes$Cancer.Type == "All Cancers"  & ncpes$Year == 2018 & ncpes$Question.Text == input$Question.Text2],
+      "Differance between Male and Female score",icon = icon("venus-mars"),color = "blue"
+    ) 
+    })
+    output$compvalueboxsig <-renderValueBox({
+      valueBox(
+      value =  ncpes$Significance.test[ncpes$Geog == input$Geog & ncpes$Trust.Name == input$Trust.Name & ncpes$IMD == "All" &
+                                  ncpes$Gender == "Male" & ncpes$adjusted.unadjusted.yearonyear == "unadjusted" & 
+                                  ncpes$Cancer.Type == "All Cancers"  & ncpes$Year == 2018 & ncpes$Question.Text == input$Question.Text2],
+      "Is the differance between male and female performance Significant?",icon = icon("arrows-alt-v"),color = "purple"
+      )
+    })
+ 
+
   }else if (input$Demographic == "Deprivation") {
     
   }else if (input$Demographic == "Cancer Type") {

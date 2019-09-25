@@ -7,11 +7,11 @@ library(DT)
 library(dqshiny)
 
 ##load in data set for app
-ncpes<-read.csv("C:/Users/DEGAN001/Documents/GIT clones/COSD_Level2 App/NCPES Dashboard/CPESDataset.csv",sep = ",", na.strings = "NA",
-                stringsAsFactors = FALSE)
-
-#ncpes<-read.csv("https://raw.githubusercontent.com/Centre-for-Cancer-Outcomes/NCPES-Dashboard/master/CPESDataset.csv",sep = ",", na.strings = "NA",
+#ncpes<-read.csv("C:/Users/DEGAN001/Documents/GIT clones/COSD_Level2 App/NCPES Dashboard/CPESDataset.csv",sep = ",", na.strings = "NA",
 #                stringsAsFactors = FALSE)
+
+ncpes<-read.csv("https://raw.githubusercontent.com/Centre-for-Cancer-Outcomes/NCPES-Dashboard/master/CPESDataset.csv",sep = ",", na.strings = "NA",
+                stringsAsFactors = FALSE)
 ncpes$qnum <- as.numeric(gsub("[a-zA-Z ]", "", ncpes$Question.Number))
 ncpes$scored.percentage <-  ifelse(ncpes$scored.percentage > 1,ncpes$scored.percentage,ncpes$scored.percentage * 100)
 ncpes$Lower.95..confidence.interval <-ifelse(ncpes$Lower.95..confidence.interval >1,ncpes$Lower.95..confidence.interval,ncpes$Lower.95..confidence.interval *100)
