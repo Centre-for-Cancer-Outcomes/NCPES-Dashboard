@@ -3,7 +3,6 @@ list.of.packages <- c("tidyverse","shiny","shinydashboard","lubridate","DT","sca
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages, dependencies=TRUE, repos='http://cran.rstudio.com/')
 
-
 ## load packages
 library(shiny)
 library(shinydashboard)
@@ -123,3 +122,6 @@ ggpoverviewtable
 
 
 unique(ncpes$Question.Text)
+
+
+unique(ncpes$Question.Text[order(ncpes$Question.Number) & ncpes$cpesqtype %in% c("Operations")])

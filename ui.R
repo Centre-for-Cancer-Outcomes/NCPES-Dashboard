@@ -49,14 +49,13 @@ body <- dashboardBody(
      )),
     tabItem(tabName = "timeseries",
             fluidRow(
-       box(selectInput("Question.Text","Question",choices = unique(factor(ncpes$Question.Text[order(ncpes$Question.Number)])),
-                       selected = "Before you were told you needed to go to hospital about cancer, how many times did you see
-                       your GP (family doctor) about the health problem caused by cancer?" )
+       box(selectInput("Question.Text","Question",choices = "",selected = "" )
        ,width = 10)),
        fluidRow(
          box(plotOutput("yearonyeargraph"), title = "CPES Results Over Time",status = "primary",solidHeader = TRUE),
                valueBoxOutput("yearonyearcomp"),
-         valueBoxOutput("yearonyearlongcomp")
+         valueBoxOutput("yearonyearlongcomp"),
+         valueBoxOutput("yearonyeardif")
                ),
       fluidRow(
          box(plotOutput("yearonyeargraphnum"), title = "CPES Number of Responses Over Time",status = "primary",solidHeader = TRUE),
@@ -95,10 +94,10 @@ body <- dashboardBody(
                                      title = "CPES Question", status = "info" 
                    )),
           fluidRow(
-            plotOutput("compgraph")
+           box(plotOutput("compgraph"),title = "Graph Compareing CPES Score by Data Type",status = "primary",solidHeader = TRUE,width = 12)
           ),
           fluidRow(
-            box(DT::dataTableOutput("comtable"),"CPES Data table", status = "success", solidHeader = TRUE),
+            box(DT::dataTableOutput("comtable"),title = "CPES Data table", status = "success", solidHeader = TRUE),
             valueBoxOutput("compvalueboxdif"),
             valueBoxOutput("compvalueboxsig")
           )
