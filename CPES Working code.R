@@ -127,4 +127,10 @@ unique(ncpes$Question.Text)
 unique(ncpes$Question.Text[order(ncpes$Question.Number) & ncpes$cpesqtype %in% c("Operations")])
 
 
+rsconnect::setAccountInfo(name='centre-for-cancer-outcomes',
+                          token='E4914B3C908FB8F54D8FE9D8BF025C14',
+                          secret='iqKcnDHcapcQpel2l6tLsSuS9zV9miS2lEDVXMIN')
 
+library(rsconnect)
+rsconnect::deployApp("C:/Users/david/Documents/GitHub/Dashboard/App")
+"C:/Users/david/Documents/GitHub/Dashboard/App"
