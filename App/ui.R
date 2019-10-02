@@ -11,6 +11,7 @@ header <- dashboardHeader(title = "NCPES 2018 Results",
 
 sidebar <- dashboardSidebar(sidebarMenu(
                              selectInput("Geog","Organization Type",choices = unique(factor(ncpes$Geog)), selected = "Trust"),
+                             selectInput("Region","Region", choices =  "",selected = ""),
                              selectInput("Trust.Name","Organization Name", choices = "",selected = ""),
                              pickerInput("Question.Type","Question Type",choices = unique(ncpes$cpesqtype), 
                                          options = list(
@@ -21,7 +22,8 @@ sidebar <- dashboardSidebar(sidebarMenu(
                              menuItem("Overview Dashoard", tabName = "overview",icon = icon("dashboard")),
                              menuItem("Timeseries", tabName  = "timeseries" , icon = icon("chart-line")),
                              menuItem("By Cancer",tabName = "cancer",icon = icon("x-ray")),
-                             menuItem("Comparison", tabName = "demographic",icon = icon("venus-mars"))
+                             menuItem("Comparison", tabName = "demographic",icon = icon("venus-mars")),
+                             helpText("Devloped by The North Central and East London Centre for Cancer Outcomes")
 ))
 
 

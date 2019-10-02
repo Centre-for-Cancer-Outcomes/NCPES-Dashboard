@@ -1,11 +1,11 @@
 ##server
 shinyServer(function(input, output,session) {
   ## dynamicaly update selection
+  observeEvent(input$Region, updateSelectInput(session,"Region","Region", choices = unique(ncpes$CALNCV18NM[ncpes$Geog == input$Geog])))   
+  
+  
   observeEvent(input$Geog,updateSelectInput(session,"Trust.Name","Organization Name",
                                             choices = unique(factor(ncpes$Trust.Name[ncpes$Geog == input$Geog]))))
-  
-  
-  
   
   #####################################
   ##       Page 1- Overview          ##

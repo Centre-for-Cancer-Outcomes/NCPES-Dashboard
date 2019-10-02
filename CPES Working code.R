@@ -34,7 +34,14 @@ ncpes$abrvperformance <- ifelse(ncpes$Performance.Rating == 1, "Above",
 
 ncpes$Number.of.responses <- as.numeric(gsub(",","",ncpes$Number.of.responses))
 
+
+
 levels(ncpes$Question.Number)
+regionlookup <- read.csv("https://raw.githubusercontent.com/Centre-for-Cancer-Outcomes/NCPES-Dashboard/master/CPES_geog_lookuptable.csv",
+                         sep=",",header = TRUE)
+
+ncpes <- left_join(ncpes,select(regionlookup,CCG18NM,CALNCV18NM), by = c("Trust.Name" ="CCG18NM" ))
+
 
 ##ncpes q type 
 
