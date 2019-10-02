@@ -1,0 +1,721 @@
+geog,CCG18CDH,CCG18NM,CALNCV18NM
+trust,REM,Aintree University Hospital NHS Foundation Trust,Cheshire And Merseyside
+trust,RCF,Airedale NHS Foundation Trust,West Yorkshire and Harrogate
+trust,RTK,Ashford and St. Peter's Hospitals NHS Foundation Trust,Surrey And Sussex
+trust,RF4,"Barking, Havering and Redbridge University Hospitals NHS Trust",North Central And North East London
+trust,RFF,Barnsley Hospital NHS Foundation Trust,South Yorkshire And Bassetlaw
+trust,R1H,Barts Health NHS Trust,North Central And North East London
+trust,RDD,Basildon and Thurrock University Hospitals NHS Foundation Trust,East Of England
+trust,RC1,Bedford Hospital NHS Trust,East Of England
+trust,RXL,Blackpool Teaching Hospitals NHS Foundation Trust,Lancashire And South Cumbria
+trust,RMC,Bolton NHS Foundation Trust,Greater Manchester
+trust,RAE,Bradford Teaching Hospitals NHS Foundation Trust,West Yorkshire and Harrogate
+trust,RXH,Brighton and Sussex University Hospitals NHS Trust,Surrey And Sussex
+trust,RXQ,Buckinghamshire Healthcare NHS Trust,Somerset Wiltshire Avon & Gloucester
+trust,RJF,Burton Hospitals NHS Foundation Trust,West Midlands
+trust,RWY,Calderdale and Huddersfield NHS Foundation Trust,West Yorkshire and Harrogate
+trust,RGT,Cambridge University Hospitals NHS Foundation Trust,East Of England
+trust,RQM,Chelsea and Westminster Hospital NHS Foundation Trust,North West And South West London
+trust,RFS,Chesterfield Royal Hospital NHS Foundation Trust,South Yorkshire And Bassetlaw
+trust,RLN,City Hospitals Sunderland NHS Foundation Trust,North East And Cumbria
+trust,RJR,Countess of Chester Hospital NHS Foundation Trust,Cheshire And Merseyside
+trust,RXP,County Durham and Darlington NHS Foundation Trust,North East And Cumbria
+trust,RJ6,Croydon Health Services NHS Trust,North West And South West London
+trust,RN7,Dartford and Gravesham NHS Trust,Kent And Medway
+trust,RP5,Doncaster and Bassetlaw Teaching Hospitals NHS Foundation Trust,South Yorkshire And Bassetlaw
+trust,RBD,Dorset County Hospital NHS Foundation Trust,Wessex
+trust,RWH,East and North Hertfordshire NHS Trust,East Of England
+trust,RJN,East Cheshire NHS Trust,Cheshire And Merseyside
+trust,RVV,East Kent Hospitals University NHS Foundation Trust,Kent And Medway
+trust,RXR,East Lancashire Hospitals NHS Trust,Lancashire And South Cumbria
+trust,RDE,East Suffolk & North Essex NHS Foundation Trust,East Of England
+trust,RXC,East Sussex Healthcare NHS Trust,Surrey And Sussex
+trust,RVR,Epsom and St Helier University Hospitals NHS Trust,North West And South West London
+trust,RDU,Frimley Health NHS Foundation Trust,Surrey And Sussex
+trust,RR7,Gateshead Health NHS Foundation Trust,North East And Cumbria
+trust,RLT,George Eliot Hospital NHS Trust,West Midlands
+trust,RTE,Gloucestershire Hospitals NHS Foundation Trust,Somerset Wiltshire Avon & Gloucester
+trust,RN3,Great Western Hospitals NHS Foundation Trust,Thames Valley
+trust,RJ1,Guy's and St Thomas' NHS Foundation Trust,South East London
+trust,RN5,Hampshire Hospitals NHS Foundation Trust,Wessex
+trust,RCD,Harrogate and District NHS Foundation Trust,West Yorkshire and Harrogate
+trust,RQX,Homerton University Hospital NHS Foundation Trust,North Central And North East London
+trust,RWA,Hull University Teaching Hospitals NHS Trust,Humber Coast And Vale
+trust,RYJ,Imperial College Healthcare NHS Trust,North West And South West London
+trust,R1F,Isle of Wight NHS Trust,Wessex
+trust,RGP,James Paget University Hospitals NHS Foundation Trust,East Of England
+trust,RNQ,Kettering General Hospital NHS Foundation Trust,East Midlands
+trust,RJZ,King's College Hospital NHS Foundation Trust,South East London
+trust,RAX,Kingston Hospital NHS Foundation Trust,North West And South West London
+trust,RXN,Lancashire Teaching Hospitals NHS Foundation Trust,Lancashire And South Cumbria
+trust,RJ2,Lewisham and Greenwich NHS Trust,South East London
+trust,RBQ,Liverpool Heart and Chest Hospital NHS Foundation Trust,Cheshire And Merseyside
+trust,REP,Liverpool Women's NHS Foundation Trust,Cheshire And Merseyside
+trust,R1K,London North West University Healthcare NHS Trust,North West And South West London
+trust,RC9,Luton and Dunstable University Hospital NHS Foundation Trust,East Of England
+trust,RWF,Maidstone and Tunbridge Wells NHS Trust,Kent And Medway
+trust,R0A,Manchester University NHS Foundation Trust,Greater Manchester
+trust,RPA,Medway NHS Foundation Trust,Kent And Medway
+trust,RBT,Mid Cheshire Hospitals NHS Foundation Trust,Cheshire And Merseyside
+trust,RQ8,Mid Essex Hospital Services NHS Trust,East Of England
+trust,RD8,Milton Keynes University Hospital NHS Foundation Trust,East Of England
+trust,RP6,Moorfields Eye Hospital NHS Foundation Trust,North Central And North East London
+trust,RM1,Norfolk and Norwich University Hospitals NHS Foundation Trust,East Of England
+trust,RVJ,North Bristol NHS Trust,Somerset Wiltshire Avon & Gloucester
+trust,RNL,North Cumbria University Hospitals NHS Trust,North East And Cumbria
+trust,RAP,North Middlesex University Hospital NHS Trust,North Central And North East London
+trust,RVW,North Tees and Hartlepool NHS Foundation Trust,North East And Cumbria
+trust,RGN,North West Anglia NHS Foundation Trust,East Of England
+trust,RNS,Northampton General Hospital NHS Trust,East Midlands
+trust,RBZ,Northern Devon Healthcare NHS Trust,Peninsula
+trust,RJL,Northern Lincolnshire and Goole NHS Foundation Trust,Humber Coast And Vale
+trust,RTF,Northumbria Healthcare NHS Foundation Trust,North East And Cumbria
+trust,RX1,Nottingham University Hospitals NHS Trust,East Midlands
+trust,RTH,Oxford University Hospitals NHS Foundation Trust,Thames Valley
+trust,RD3,Poole Hospital NHS Foundation Trust,Wessex
+trust,RHU,Portsmouth Hospitals NHS Trust,Wessex
+trust,RPC,Queen Victoria Hospital NHS Foundation Trust,Surrey And Sussex
+trust,RHW,Royal Berkshire NHS Foundation Trust,Thames Valley
+trust,RT3,Royal Brompton & Harefield NHS Foundation Trust,North West And South West London
+trust,REF,Royal Cornwall Hospitals NHS Trust,Peninsula
+trust,RH8,Royal Devon and Exeter NHS Foundation Trust,Peninsula
+trust,RAL,Royal Free London NHS Foundation Trust,North Central And North East London
+trust,RAN,Royal National Orthopaedic Hospital NHS Trust,North Central And North East London
+trust,RGM,Royal Papworth Hospital NHS Foundation Trust,East Of England
+trust,RA2,Royal Surrey County Hospital NHS Foundation Trust,Surrey And Sussex
+trust,RD1,Royal United Hospitals Bath NHS Foundation Trust,Somerset Wiltshire Avon & Gloucester
+trust,RM3,Salford Royal NHS Foundation Trust,Greater Manchester
+trust,RNZ,Salisbury NHS Foundation Trust,Somerset Wiltshire Avon & Gloucester
+trust,RXK,Sandwell and West Birmingham Hospitals NHS Trust,West Midlands
+trust,RHQ,Sheffield Teaching Hospitals NHS Foundation Trust,South Yorkshire And Bassetlaw
+trust,RK5,Sherwood Forest Hospitals NHS Foundation Trust,East Midlands
+trust,RTR,South Tees Hospitals NHS Foundation Trust,North East And Cumbria
+trust,RE9,South Tyneside NHS Foundation Trust,North East And Cumbria
+trust,RJC,South Warwickshire NHS Foundation Trust,West Midlands
+trust,RAJ,Southend University Hospital NHS Foundation Trust,East Of England
+trust,RVY,Southport & Ormskirk Hospital NHS Trust,Cheshire And Merseyside
+trust,RJ7,St George's University Hospitals NHS Foundation Trust,North West And South West London
+trust,RBN,St Helens and Knowsley Teaching Hospitals NHS Trust,Cheshire And Merseyside
+trust,RWJ,Stockport NHS Foundation Trust,Greater Manchester
+trust,RTP,Surrey and Sussex Healthcare NHS Trust,Surrey And Sussex
+trust,RMP,Tameside and Glossop Integrated Care NHS Foundation Trust,Greater Manchester
+trust,RBA,Taunton and Somerset NHS Foundation Trust,Somerset Wiltshire Avon & Gloucester
+trust,RBV,The Christie NHS Foundation Trust,Greater Manchester
+trust,REN,The Clatterbridge Cancer Centre NHS Foundation Trust,Cheshire And Merseyside
+trust,RNA,The Dudley Group NHS Foundation Trust,West Midlands
+trust,RAS,The Hillingdon Hospitals NHS Foundation Trust,North West And South West London
+trust,RR8,The Leeds Teaching Hospitals NHS Trust,West Yorkshire and Harrogate
+trust,RXF,The Mid Yorkshire Hospitals NHS Trust,West Yorkshire and Harrogate
+trust,RTD,The Newcastle upon Tyne Hospitals NHS Foundation Trust,North East And Cumbria
+trust,RW6,The Pennine Acute Hospitals NHS Trust,Greater Manchester
+trust,RQW,The Princess Alexandra Hospital NHS Trust,East Of England
+trust,RCX,The Queen Elizabeth Hospital King's Lynn NHS Foundation Trust,East Of England
+trust,RL1,The Robert Jones and Agnes Hunt Orthopaedic Hospital NHS Foundation Trust,West Midlands
+trust,RFR,The Rotherham NHS Foundation Trust,South Yorkshire And Bassetlaw
+trust,RDZ,The Royal Bournemouth and Christchurch Hospitals NHS Foundation Trust,Wessex
+trust,RQ6,The Royal Liverpool and Broadgreen University Hospitals NHS Trust,Cheshire And Merseyside
+trust,RPY,The Royal Marsden NHS Foundation Trust,North West And South West London
+trust,RRJ,The Royal Orthopaedic Hospital NHS Foundation Trust,West Midlands
+trust,RL4,The Royal Wolverhampton NHS Trust,West Midlands
+trust,RXW,The Shrewsbury and Telford Hospital NHS Trust,West Midlands
+trust,RET,The Walton Centre NHS Foundation Trust,Cheshire And Merseyside
+trust,RA9,Torbay and South Devon NHS Foundation Trust,Peninsula
+trust,RWD,United Lincolnshire Hospitals NHS Trust,East Midlands
+trust,RRV,University College London Hospitals NHS Foundation Trust,North Central And North East London
+trust,RHM,University Hospital Southampton NHS Foundation Trust,Wessex
+trust,RRK,University Hospitals Birmingham NHS Foundation Trust,West Midlands
+trust,RA7,University Hospitals Bristol NHS Foundation Trust,Somerset Wiltshire Avon & Gloucester
+trust,RKB,University Hospitals Coventry and Warwickshire NHS Trust,West Midlands
+trust,RTG,University Hospitals of Derby and Burton NHS Foundation Trust,East Midlands
+trust,RWE,University Hospitals of Leicester NHS Trust,East Midlands
+trust,RTX,University Hospitals of Morecambe Bay NHS Foundation Trust,Lancashire And South Cumbria
+trust,RJE,University Hospitals of North Midlands NHS Trust,West Midlands
+trust,RK9,University Hospitals Plymouth NHS Trust,Peninsula
+trust,RBK,Walsall Healthcare NHS Trust,West Midlands
+trust,RWW,Warrington and Halton Hospitals NHS Foundation Trust,Cheshire And Merseyside
+trust,RWG,West Hertfordshire Hospitals NHS Trust,East Of England
+trust,RGR,West Suffolk NHS Foundation Trust,East Of England
+trust,RYR,Western Sussex Hospitals NHS Foundation Trust,Surrey And Sussex
+trust,RA3,Weston Area Health NHS Trust,Somerset Wiltshire Avon & Gloucester
+trust,RKE,Whittington Health NHS Trust,North Central And North East London
+trust,RBL,Wirral University Teaching Hospital NHS Foundation Trust,Cheshire And Merseyside
+trust,RWP,Worcestershire Acute Hospitals NHS Trust,West Midlands
+trust,RRF,"Wrightington, Wigan and Leigh NHS Foundation Trust",Greater Manchester
+trust,RLQ,Wye Valley NHS Trust,West Midlands
+trust,RA4,Yeovil District Hospital NHS Foundation Trust,Somerset Wiltshire Avon & Gloucester
+trust,RCB,York Teaching Hospital NHS Foundation Trust,Humber Coast And Vale
+National,All,National,National
+ccg,02N,"NHS Airedale, Wharfedale and Craven CCG",West Yorkshire
+ccg,09C,NHS Ashford CCG,Kent and Medway
+ccg,07L,NHS Barking and Dagenham CCG,North Central and North East London
+ccg,07M,NHS Barnet CCG,North Central and North East London
+ccg,02P,NHS Barnsley CCG,"South Yorkshire, Bassetlaw, North Derbyshire and Hardwick"
+ccg,99E,NHS Basildon and Brentwood CCG,East of England
+ccg,02Q,NHS Bassetlaw CCG,"South Yorkshire, Bassetlaw, North Derbyshire and Hardwick"
+ccg,11E,NHS Bath and North East Somerset CCG,"Somerset, Wiltshire, Avon and Gloucestershire"
+ccg,06F,NHS Bedfordshire CCG,East of England
+ccg,15A,NHS Berkshire West CCG,Thames Valley
+ccg,07N,NHS Bexley CCG,South East London
+ccg,15E,NHS Birmingham and Solihull CCG,West Midlands
+ccg,00Q,NHS Blackburn with Darwen CCG,Lancashire and South Cumbria
+ccg,00R,NHS Blackpool CCG,Lancashire and South Cumbria
+ccg,00T,NHS Bolton CCG,Greater Manchester
+ccg,02W,NHS Bradford City CCG,West Yorkshire
+ccg,02R,NHS Bradford Districts CCG,West Yorkshire
+ccg,07P,NHS Brent CCG,North West and South West London
+ccg,09D,NHS Brighton and Hove CCG,Surrey and Sussex
+ccg,15C,"NHS Bristol, North Somerset and South Gloucestershire CCG","Somerset, Wiltshire, Avon and Gloucestershire"
+ccg,07Q,NHS Bromley CCG,South East London
+ccg,14Y,NHS Buckinghamshire CCG,Thames Valley
+ccg,00V,NHS Bury CCG,Greater Manchester
+ccg,02T,NHS Calderdale CCG,West Yorkshire
+ccg,06H,NHS Cambridgeshire and Peterborough CCG,East of England
+ccg,07R,NHS Camden CCG,North Central and North East London
+ccg,04Y,NHS Cannock Chase CCG,West Midlands
+ccg,09E,NHS Canterbury and Coastal CCG,Kent and Medway
+ccg,99F,NHS Castle Point and Rochford CCG,East of England
+ccg,09A,NHS Central London (Westminster) CCG,North West and South West London
+ccg,00X,NHS Chorley and South Ribble CCG,Lancashire and South Cumbria
+ccg,07T,NHS City and Hackney CCG,North Central and North East London
+ccg,09G,NHS Coastal West Sussex CCG,Surrey and Sussex
+ccg,03V,NHS Corby CCG,East Midlands
+ccg,05A,NHS Coventry and Rugby CCG,West Midlands
+ccg,09H,NHS Crawley CCG,Surrey and Sussex
+ccg,07V,NHS Croydon CCG,North West and South West London
+ccg,00C,NHS Darlington CCG,North East and Cumbria
+ccg,09J,"NHS Dartford, Gravesham and Swanley CCG",Kent and Medway
+ccg,02X,NHS Doncaster CCG,"South Yorkshire, Bassetlaw, North Derbyshire and Hardwick"
+ccg,11J,NHS Dorset CCG,Wessex
+ccg,05C,NHS Dudley CCG,West Midlands
+ccg,00D,"NHS Durham Dales, Easington and Sedgefield CCG",North East and Cumbria
+ccg,07W,NHS Ealing CCG,North West and South West London
+ccg,06K,NHS East and North Hertfordshire CCG,East of England
+ccg,15D,NHS East Berkshire CCG,Thames Valley
+ccg,01A,NHS East Lancashire CCG,Lancashire and South Cumbria
+ccg,03W,NHS East Leicestershire and Rutland CCG,East Midlands
+ccg,02Y,NHS East Riding of Yorkshire CCG,"Humber, Coast and Vale"
+ccg,05D,NHS East Staffordshire CCG,West Midlands
+ccg,09L,NHS East Surrey CCG,Surrey and Sussex
+ccg,09F,"NHS Eastbourne, Hailsham and Seaford CCG",Surrey and Sussex
+ccg,01C,NHS Eastern Cheshire CCG,Cheshire and Merseyside
+ccg,07X,NHS Enfield CCG,North Central and North East London
+ccg,03X,NHS Erewash CCG,East Midlands
+ccg,10K,NHS Fareham and Gosport CCG,Wessex
+ccg,02M,NHS Fylde and Wyre CCG,Lancashire and South Cumbria
+ccg,11M,NHS Gloucestershire CCG,"Somerset, Wiltshire, Avon and Gloucestershire"
+ccg,06M,NHS Great Yarmouth and Waveney CCG,East of England
+ccg,03A,NHS Greater Huddersfield CCG,West Yorkshire
+ccg,01E,NHS Greater Preston CCG,Lancashire and South Cumbria
+ccg,08A,NHS Greenwich CCG,South East London
+ccg,09N,NHS Guildford and Waverley CCG,Surrey and Sussex
+ccg,01F,NHS Halton CCG,Cheshire and Merseyside
+ccg,03D,"NHS Hambleton, Richmondshire and Whitby CCG",North East and Cumbria
+ccg,08C,NHS Hammersmith and Fulham CCG,North West and South West London
+ccg,03Y,NHS Hardwick CCG,"South Yorkshire, Bassetlaw, North Derbyshire and Hardwick"
+ccg,08D,NHS Haringey CCG,North Central and North East London
+ccg,03E,NHS Harrogate and Rural District CCG,West Yorkshire
+ccg,08E,NHS Harrow CCG,North West and South West London
+ccg,00K,NHS Hartlepool and Stockton-on-Tees CCG,North East and Cumbria
+ccg,09P,NHS Hastings and Rother CCG,Surrey and Sussex
+ccg,08F,NHS Havering CCG,North Central and North East London
+ccg,05F,NHS Herefordshire CCG,West Midlands
+ccg,06N,NHS Herts Valleys CCG,East of England
+ccg,01D,"NHS Heywood, Middleton and Rochdale CCG",Greater Manchester
+ccg,99K,NHS High Weald Lewes Havens CCG,Surrey and Sussex
+ccg,08G,NHS Hillingdon CCG,North West and South West London
+ccg,09X,NHS Horsham and Mid Sussex CCG,Surrey and Sussex
+ccg,07Y,NHS Hounslow CCG,North West and South West London
+ccg,03F,NHS Hull CCG,"Humber, Coast and Vale"
+ccg,06L,NHS Ipswich and East Suffolk CCG,East of England
+ccg,10L,NHS Isle of Wight CCG,Wessex
+ccg,08H,NHS Islington CCG,North Central and North East London
+ccg,11N,NHS Kernow CCG,Peninsula
+ccg,08J,NHS Kingston CCG,North West and South West London
+ccg,01J,NHS Knowsley CCG,Cheshire and Merseyside
+ccg,08K,NHS Lambeth CCG,South East London
+ccg,15F,NHS Leeds CCG,West Yorkshire
+ccg,04C,NHS Leicester City CCG,East Midlands
+ccg,08L,NHS Lewisham CCG,South East London
+ccg,03T,NHS Lincolnshire East CCG,East Midlands
+ccg,04D,NHS Lincolnshire West CCG,East Midlands
+ccg,99A,NHS Liverpool CCG,Cheshire and Merseyside
+ccg,06P,NHS Luton CCG,East of England
+ccg,14L,NHS Manchester CCG,Greater Manchester
+ccg,04E,NHS Mansfield and Ashfield CCG,East Midlands
+ccg,09W,NHS Medway CCG,Kent and Medway
+ccg,08R,NHS Merton CCG,North West and South West London
+ccg,06Q,NHS Mid Essex CCG,East of England
+ccg,04F,NHS Milton Keynes CCG,East of England
+ccg,01K,NHS Morecambe Bay CCG,Lancashire and South Cumbria
+ccg,04G,NHS Nene CCG,East Midlands
+ccg,04H,NHS Newark and Sherwood CCG,East Midlands
+ccg,13T,NHS Newcastle Gateshead CCG,North East and Cumbria
+ccg,08M,NHS Newham CCG,North Central and North East London
+ccg,01H,NHS North Cumbria CCG,North East and Cumbria
+ccg,04J,NHS North Derbyshire CCG,"South Yorkshire, Bassetlaw, North Derbyshire and Hardwick"
+ccg,00J,NHS North Durham CCG,North East and Cumbria
+ccg,06T,NHS North East Essex CCG,East of England
+ccg,99M,NHS North East Hampshire and Farnham CCG,Surrey and Sussex
+ccg,03H,NHS North East Lincolnshire CCG,"Humber, Coast and Vale"
+ccg,10J,NHS North Hampshire CCG,Wessex
+ccg,03J,NHS North Kirklees CCG,West Yorkshire
+ccg,03K,NHS North Lincolnshire CCG,"Humber, Coast and Vale"
+ccg,06V,NHS North Norfolk CCG,East of England
+ccg,05G,NHS North Staffordshire CCG,West Midlands
+ccg,99C,NHS North Tyneside CCG,North East and Cumbria
+ccg,09Y,NHS North West Surrey CCG,Surrey and Sussex
+ccg,99P,"NHS Northern, Eastern and Western Devon CCG",Peninsula
+ccg,00L,NHS Northumberland CCG,North East and Cumbria
+ccg,06W,NHS Norwich CCG,East of England
+ccg,04K,NHS Nottingham City CCG,East Midlands
+ccg,04L,NHS Nottingham North and East CCG,East Midlands
+ccg,04M,NHS Nottingham West CCG,East Midlands
+ccg,00Y,NHS Oldham CCG,Greater Manchester
+ccg,10Q,NHS Oxfordshire CCG,Thames Valley
+ccg,10R,NHS Portsmouth CCG,Wessex
+ccg,08N,NHS Redbridge CCG,North Central and North East London
+ccg,05J,NHS Redditch and Bromsgrove CCG,West Midlands
+ccg,08P,NHS Richmond CCG,North West and South West London
+ccg,03L,NHS Rotherham CCG,"South Yorkshire, Bassetlaw, North Derbyshire and Hardwick"
+ccg,04N,NHS Rushcliffe CCG,East Midlands
+ccg,01G,NHS Salford CCG,Greater Manchester
+ccg,05L,NHS Sandwell and West Birmingham CCG,West Midlands
+ccg,03M,NHS Scarborough and Ryedale CCG,"Humber, Coast and Vale"
+ccg,03N,NHS Sheffield CCG,"South Yorkshire, Bassetlaw, North Derbyshire and Hardwick"
+ccg,05N,NHS Shropshire CCG,West Midlands
+ccg,11X,NHS Somerset CCG,"Somerset, Wiltshire, Avon and Gloucestershire"
+ccg,01R,NHS South Cheshire CCG,Cheshire and Merseyside
+ccg,99Q,NHS South Devon and Torbay CCG,Peninsula
+ccg,05Q,NHS South East Staffordshire and Seisdon Peninsula CCG,West Midlands
+ccg,10V,NHS South Eastern Hampshire CCG,Wessex
+ccg,10A,NHS South Kent Coast CCG,Kent and Medway
+ccg,99D,NHS South Lincolnshire CCG,East Midlands
+ccg,06Y,NHS South Norfolk CCG,East of England
+ccg,01T,NHS South Sefton CCG,Cheshire and Merseyside
+ccg,00M,NHS South Tees CCG,North East and Cumbria
+ccg,00N,NHS South Tyneside CCG,North East and Cumbria
+ccg,05R,NHS South Warwickshire CCG,West Midlands
+ccg,04Q,NHS South West Lincolnshire CCG,East Midlands
+ccg,05T,NHS South Worcestershire CCG,West Midlands
+ccg,10X,NHS Southampton CCG,Wessex
+ccg,99G,NHS Southend CCG,East of England
+ccg,04R,NHS Southern Derbyshire CCG,East Midlands
+ccg,01V,NHS Southport and Formby CCG,Cheshire and Merseyside
+ccg,08Q,NHS Southwark CCG,South East London
+ccg,01X,NHS St Helens CCG,Cheshire and Merseyside
+ccg,05V,NHS Stafford and Surrounds CCG,West Midlands
+ccg,01W,NHS Stockport CCG,Greater Manchester
+ccg,05W,NHS Stoke on Trent CCG,West Midlands
+ccg,00P,NHS Sunderland CCG,North East and Cumbria
+ccg,99H,NHS Surrey Downs CCG,Surrey and Sussex
+ccg,10C,NHS Surrey Heath CCG,Surrey and Sussex
+ccg,08T,NHS Sutton CCG,North West and South West London
+ccg,10D,NHS Swale CCG,Kent and Medway
+ccg,12D,NHS Swindon CCG,Thames Valley
+ccg,01Y,NHS Tameside and Glossop CCG,Greater Manchester
+ccg,05X,NHS Telford and Wrekin CCG,West Midlands
+ccg,10E,NHS Thanet CCG,Kent and Medway
+ccg,07G,NHS Thurrock CCG,East of England
+ccg,08V,NHS Tower Hamlets CCG,North Central and North East London
+ccg,02A,NHS Trafford CCG,Greater Manchester
+ccg,03Q,NHS Vale of York CCG,"Humber, Coast and Vale"
+ccg,02D,NHS Vale Royal CCG,Cheshire and Merseyside
+ccg,03R,NHS Wakefield CCG,West Yorkshire
+ccg,05Y,NHS Walsall CCG,West Midlands
+ccg,08W,NHS Waltham Forest CCG,North Central and North East London
+ccg,08X,NHS Wandsworth CCG,North West and South West London
+ccg,02E,NHS Warrington CCG,Cheshire and Merseyside
+ccg,05H,NHS Warwickshire North CCG,West Midlands
+ccg,02F,NHS West Cheshire CCG,Cheshire and Merseyside
+ccg,07H,NHS West Essex CCG,East of England
+ccg,11A,NHS West Hampshire CCG,Wessex
+ccg,99J,NHS West Kent CCG,Kent and Medway
+ccg,02G,NHS West Lancashire CCG,Lancashire and South Cumbria
+ccg,04V,NHS West Leicestershire CCG,East Midlands
+ccg,08Y,NHS West London CCG,North West and South West London
+ccg,07J,NHS West Norfolk CCG,East of England
+ccg,07K,NHS West Suffolk CCG,East of England
+ccg,02H,NHS Wigan Borough CCG,Greater Manchester
+ccg,99N,NHS Wiltshire CCG,"Somerset, Wiltshire, Avon and Gloucestershire"
+ccg,12F,NHS Wirral CCG,Cheshire and Merseyside
+ccg,06A,NHS Wolverhampton CCG,West Midlands
+ccg,06D,NHS Wyre Forest CCG,West Midlands
+ca,E56000005,Cheshire and Merseyside,North West
+ca,E56000008,East Midlands,East of England
+ca,E56000009,East of England,South East
+ca,E56000004,"Humber, Coast and Vale",Yorkshire and The Humber
+ca,E56000011,Kent and Medway,South East
+ca,E56000018,Lancashire and South Cumbria,North West
+ca,E57000001,National Cancer Vanguard: Greater Manchester,North West
+ca,E57000002,National Cancer Vanguard: North Central and North East London,London
+ca,E57000003,National Cancer Vanguard: North West and South West London,London
+ca,E56000017,North East and Cumbria,North East
+ca,E56000014,Peninsula,South West
+ca,E56000015,"Somerset, Wiltshire, Avon and Gloucestershire",South West
+ca,E56000010,South East London,London
+ca,E56000006,"South Yorkshire, Bassetlaw, North Derbyshire and Hardwick",Yorkshire and The Humber
+ca,E56000012,Surrey and Sussex,South East
+ca,E56000013,Thames Valley,South West
+ca,E56000016,Wessex,South West
+ca,E56000007,West Midlands,West Midlands
+ca,E56000003,West Yorkshire and Harrogate,Yorkshire and The Humber
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
