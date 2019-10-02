@@ -1,38 +1,38 @@
 geog,CCG18CDH,CCG18NM,CALNCV18NM
-trust,REM,Aintree University Hospital NHS Foundation Trust,Cheshire And Merseyside
+trust,REM,Aintree University Hospital NHS Foundation Trust,Cheshire and Merseyside
 trust,RCF,Airedale NHS Foundation Trust,West Yorkshire and Harrogate
-trust,RTK,Ashford and St. Peter's Hospitals NHS Foundation Trust,Surrey And Sussex
+trust,RTK,Ashford and St. Peter's Hospitals NHS Foundation Trust,Surrey and Sussex
 trust,RF4,"Barking, Havering and Redbridge University Hospitals NHS Trust",North Central and North East London
 trust,RFF,Barnsley Hospital NHS Foundation Trust,"South Yorkshire, Bassetlaw, North Derbyshire and Hardwick"
 trust,R1H,Barts Health NHS Trust,North Central and North East London
 trust,RDD,Basildon and Thurrock University Hospitals NHS Foundation Trust,East Of England
 trust,RC1,Bedford Hospital NHS Trust,East Of England
-trust,RXL,Blackpool Teaching Hospitals NHS Foundation Trust,Lancashire And South Cumbria
+trust,RXL,Blackpool Teaching Hospitals NHS Foundation Trust,Lancashire and South Cumbria
 trust,RMC,Bolton NHS Foundation Trust,Greater Manchester
 trust,RAE,Bradford Teaching Hospitals NHS Foundation Trust,West Yorkshire and Harrogate
-trust,RXH,Brighton and Sussex University Hospitals NHS Trust,Surrey And Sussex
+trust,RXH,Brighton and Sussex University Hospitals NHS Trust,Surrey and Sussex
 trust,RXQ,Buckinghamshire Healthcare NHS Trust,Somerset Wiltshire Avon & Gloucester
 trust,RJF,Burton Hospitals NHS Foundation Trust,West Midlands
 trust,RWY,Calderdale and Huddersfield NHS Foundation Trust,West Yorkshire and Harrogate
 trust,RGT,Cambridge University Hospitals NHS Foundation Trust,East Of England
-trust,RQM,Chelsea and Westminster Hospital NHS Foundation Trust,North West And South West London
+trust,RQM,Chelsea and Westminster Hospital NHS Foundation Trust,North West and South West London
 trust,RFS,Chesterfield Royal Hospital NHS Foundation Trust,"South Yorkshire, Bassetlaw, North Derbyshire and Hardwick"
-trust,RLN,City Hospitals Sunderland NHS Foundation Trust,North East And Cumbria
-trust,RJR,Countess of Chester Hospital NHS Foundation Trust,Cheshire And Merseyside
-trust,RXP,County Durham and Darlington NHS Foundation Trust,North East And Cumbria
-trust,RJ6,Croydon Health Services NHS Trust,North West And South West London
-trust,RN7,Dartford and Gravesham NHS Trust,Kent And Medway
+trust,RLN,City Hospitals Sunderland NHS Foundation Trust,North East and Cumbria
+trust,RJR,Countess of Chester Hospital NHS Foundation Trust,Cheshire and Merseyside
+trust,RXP,County Durham and Darlington NHS Foundation Trust,North East and Cumbria
+trust,RJ6,Croydon Health Services NHS Trust,North West and South West London
+trust,RN7,Dartford and Gravesham NHS Trust,Kent and Medway
 trust,RP5,Doncaster and Bassetlaw Teaching Hospitals NHS Foundation Trust,"South Yorkshire, Bassetlaw, North Derbyshire and Hardwick"
 trust,RBD,Dorset County Hospital NHS Foundation Trust,Wessex
 trust,RWH,East and North Hertfordshire NHS Trust,East Of England
-trust,RJN,East Cheshire NHS Trust,Cheshire And Merseyside
-trust,RVV,East Kent Hospitals University NHS Foundation Trust,Kent And Medway
-trust,RXR,East Lancashire Hospitals NHS Trust,Lancashire And South Cumbria
+trust,RJN,East Cheshire NHS Trust,Cheshire and Merseyside
+trust,RVV,East Kent Hospitals University NHS Foundation Trust,Kent and Medway
+trust,RXR,East Lancashire Hospitals NHS Trust,Lancashire and South Cumbria
 trust,RDE,East Suffolk & North Essex NHS Foundation Trust,East Of England
-trust,RXC,East Sussex Healthcare NHS Trust,Surrey And Sussex
-trust,RVR,Epsom and St Helier University Hospitals NHS Trust,North West And South West London
-trust,RDU,Frimley Health NHS Foundation Trust,Surrey And Sussex
-trust,RR7,Gateshead Health NHS Foundation Trust,North East And Cumbria
+trust,RXC,East Sussex Healthcare NHS Trust,Surrey and Sussex
+trust,RVR,Epsom and St Helier University Hospitals NHS Trust,North West and South West London
+trust,RDU,Frimley Health NHS Foundation Trust,Surrey and Sussex
+trust,RR7,Gateshead Health NHS Foundation Trust,North East and Cumbria
 trust,RLT,George Eliot Hospital NHS Trust,West Midlands
 trust,RTE,Gloucestershire Hospitals NHS Foundation Trust,Somerset Wiltshire Avon & Gloucester
 trust,RN3,Great Western Hospitals NHS Foundation Trust,Thames Valley
@@ -41,84 +41,84 @@ trust,RN5,Hampshire Hospitals NHS Foundation Trust,Wessex
 trust,RCD,Harrogate and District NHS Foundation Trust,West Yorkshire and Harrogate
 trust,RQX,Homerton University Hospital NHS Foundation Trust,North Central and North East London
 trust,RWA,Hull University Teaching Hospitals NHS Trust,"Humber, Coast and Vale"
-trust,RYJ,Imperial College Healthcare NHS Trust,North West And South West London
+trust,RYJ,Imperial College Healthcare NHS Trust,North West and South West London
 trust,R1F,Isle of Wight NHS Trust,Wessex
 trust,RGP,James Paget University Hospitals NHS Foundation Trust,East Of England
 trust,RNQ,Kettering General Hospital NHS Foundation Trust,East Midlands
 trust,RJZ,King's College Hospital NHS Foundation Trust,South East London
-trust,RAX,Kingston Hospital NHS Foundation Trust,North West And South West London
-trust,RXN,Lancashire Teaching Hospitals NHS Foundation Trust,Lancashire And South Cumbria
+trust,RAX,Kingston Hospital NHS Foundation Trust,North West and South West London
+trust,RXN,Lancashire Teaching Hospitals NHS Foundation Trust,Lancashire and South Cumbria
 trust,RJ2,Lewisham and Greenwich NHS Trust,South East London
-trust,RBQ,Liverpool Heart and Chest Hospital NHS Foundation Trust,Cheshire And Merseyside
-trust,REP,Liverpool Women's NHS Foundation Trust,Cheshire And Merseyside
-trust,R1K,London North West University Healthcare NHS Trust,North West And South West London
+trust,RBQ,Liverpool Heart and Chest Hospital NHS Foundation Trust,Cheshire and Merseyside
+trust,REP,Liverpool Women's NHS Foundation Trust,Cheshire and Merseyside
+trust,R1K,London North West University Healthcare NHS Trust,North West and South West London
 trust,RC9,Luton and Dunstable University Hospital NHS Foundation Trust,East Of England
-trust,RWF,Maidstone and Tunbridge Wells NHS Trust,Kent And Medway
+trust,RWF,Maidstone and Tunbridge Wells NHS Trust,Kent and Medway
 trust,R0A,Manchester University NHS Foundation Trust,Greater Manchester
-trust,RPA,Medway NHS Foundation Trust,Kent And Medway
-trust,RBT,Mid Cheshire Hospitals NHS Foundation Trust,Cheshire And Merseyside
+trust,RPA,Medway NHS Foundation Trust,Kent and Medway
+trust,RBT,Mid Cheshire Hospitals NHS Foundation Trust,Cheshire and Merseyside
 trust,RQ8,Mid Essex Hospital Services NHS Trust,East Of England
 trust,RD8,Milton Keynes University Hospital NHS Foundation Trust,East Of England
 trust,RP6,Moorfields Eye Hospital NHS Foundation Trust,North Central and North East London
 trust,RM1,Norfolk and Norwich University Hospitals NHS Foundation Trust,East Of England
 trust,RVJ,North Bristol NHS Trust,Somerset Wiltshire Avon & Gloucester
-trust,RNL,North Cumbria University Hospitals NHS Trust,North East And Cumbria
+trust,RNL,North Cumbria University Hospitals NHS Trust,North East and Cumbria
 trust,RAP,North Middlesex University Hospital NHS Trust,North Central and North East London
-trust,RVW,North Tees and Hartlepool NHS Foundation Trust,North East And Cumbria
+trust,RVW,North Tees and Hartlepool NHS Foundation Trust,North East and Cumbria
 trust,RGN,North West Anglia NHS Foundation Trust,East Of England
 trust,RNS,Northampton General Hospital NHS Trust,East Midlands
 trust,RBZ,Northern Devon Healthcare NHS Trust,Peninsula
 trust,RJL,Northern Lincolnshire and Goole NHS Foundation Trust,"Humber, Coast and Vale"
-trust,RTF,Northumbria Healthcare NHS Foundation Trust,North East And Cumbria
+trust,RTF,Northumbria Healthcare NHS Foundation Trust,North East and Cumbria
 trust,RX1,Nottingham University Hospitals NHS Trust,East Midlands
 trust,RTH,Oxford University Hospitals NHS Foundation Trust,Thames Valley
 trust,RD3,Poole Hospital NHS Foundation Trust,Wessex
 trust,RHU,Portsmouth Hospitals NHS Trust,Wessex
-trust,RPC,Queen Victoria Hospital NHS Foundation Trust,Surrey And Sussex
+trust,RPC,Queen Victoria Hospital NHS Foundation Trust,Surrey and Sussex
 trust,RHW,Royal Berkshire NHS Foundation Trust,Thames Valley
-trust,RT3,Royal Brompton & Harefield NHS Foundation Trust,North West And South West London
+trust,RT3,Royal Brompton & Harefield NHS Foundation Trust,North West and South West London
 trust,REF,Royal Cornwall Hospitals NHS Trust,Peninsula
 trust,RH8,Royal Devon and Exeter NHS Foundation Trust,Peninsula
 trust,RAL,Royal Free London NHS Foundation Trust,North Central and North East London
 trust,RAN,Royal National Orthopaedic Hospital NHS Trust,North Central and North East London
 trust,RGM,Royal Papworth Hospital NHS Foundation Trust,East Of England
-trust,RA2,Royal Surrey County Hospital NHS Foundation Trust,Surrey And Sussex
+trust,RA2,Royal Surrey County Hospital NHS Foundation Trust,Surrey and Sussex
 trust,RD1,Royal United Hospitals Bath NHS Foundation Trust,Somerset Wiltshire Avon & Gloucester
 trust,RM3,Salford Royal NHS Foundation Trust,Greater Manchester
 trust,RNZ,Salisbury NHS Foundation Trust,Somerset Wiltshire Avon & Gloucester
 trust,RXK,Sandwell and West Birmingham Hospitals NHS Trust,West Midlands
 trust,RHQ,Sheffield Teaching Hospitals NHS Foundation Trust,"South Yorkshire, Bassetlaw, North Derbyshire and Hardwick"
 trust,RK5,Sherwood Forest Hospitals NHS Foundation Trust,East Midlands
-trust,RTR,South Tees Hospitals NHS Foundation Trust,North East And Cumbria
-trust,RE9,South Tyneside NHS Foundation Trust,North East And Cumbria
+trust,RTR,South Tees Hospitals NHS Foundation Trust,North East and Cumbria
+trust,RE9,South Tyneside NHS Foundation Trust,North East and Cumbria
 trust,RJC,South Warwickshire NHS Foundation Trust,West Midlands
 trust,RAJ,Southend University Hospital NHS Foundation Trust,East Of England
-trust,RVY,Southport & Ormskirk Hospital NHS Trust,Cheshire And Merseyside
-trust,RJ7,St George's University Hospitals NHS Foundation Trust,North West And South West London
-trust,RBN,St Helens and Knowsley Teaching Hospitals NHS Trust,Cheshire And Merseyside
+trust,RVY,Southport & Ormskirk Hospital NHS Trust,Cheshire and Merseyside
+trust,RJ7,St George's University Hospitals NHS Foundation Trust,North West and South West London
+trust,RBN,St Helens and Knowsley Teaching Hospitals NHS Trust,Cheshire and Merseyside
 trust,RWJ,Stockport NHS Foundation Trust,Greater Manchester
-trust,RTP,Surrey and Sussex Healthcare NHS Trust,Surrey And Sussex
+trust,RTP,Surrey and Sussex Healthcare NHS Trust,Surrey and Sussex
 trust,RMP,Tameside and Glossop Integrated Care NHS Foundation Trust,Greater Manchester
 trust,RBA,Taunton and Somerset NHS Foundation Trust,Somerset Wiltshire Avon & Gloucester
 trust,RBV,The Christie NHS Foundation Trust,Greater Manchester
-trust,REN,The Clatterbridge Cancer Centre NHS Foundation Trust,Cheshire And Merseyside
+trust,REN,The Clatterbridge Cancer Centre NHS Foundation Trust,Cheshire and Merseyside
 trust,RNA,The Dudley Group NHS Foundation Trust,West Midlands
-trust,RAS,The Hillingdon Hospitals NHS Foundation Trust,North West And South West London
+trust,RAS,The Hillingdon Hospitals NHS Foundation Trust,North West and South West London
 trust,RR8,The Leeds Teaching Hospitals NHS Trust,West Yorkshire and Harrogate
 trust,RXF,The Mid Yorkshire Hospitals NHS Trust,West Yorkshire and Harrogate
-trust,RTD,The Newcastle upon Tyne Hospitals NHS Foundation Trust,North East And Cumbria
+trust,RTD,The Newcastle upon Tyne Hospitals NHS Foundation Trust,North East and Cumbria
 trust,RW6,The Pennine Acute Hospitals NHS Trust,Greater Manchester
 trust,RQW,The Princess Alexandra Hospital NHS Trust,East Of England
 trust,RCX,The Queen Elizabeth Hospital King's Lynn NHS Foundation Trust,East Of England
 trust,RL1,The Robert Jones and Agnes Hunt Orthopaedic Hospital NHS Foundation Trust,West Midlands
 trust,RFR,The Rotherham NHS Foundation Trust,"South Yorkshire, Bassetlaw, North Derbyshire and Hardwick"
 trust,RDZ,The Royal Bournemouth and Christchurch Hospitals NHS Foundation Trust,Wessex
-trust,RQ6,The Royal Liverpool and Broadgreen University Hospitals NHS Trust,Cheshire And Merseyside
-trust,RPY,The Royal Marsden NHS Foundation Trust,North West And South West London
+trust,RQ6,The Royal Liverpool and Broadgreen University Hospitals NHS Trust,Cheshire and Merseyside
+trust,RPY,The Royal Marsden NHS Foundation Trust,North West and South West London
 trust,RRJ,The Royal Orthopaedic Hospital NHS Foundation Trust,West Midlands
 trust,RL4,The Royal Wolverhampton NHS Trust,West Midlands
 trust,RXW,The Shrewsbury and Telford Hospital NHS Trust,West Midlands
-trust,RET,The Walton Centre NHS Foundation Trust,Cheshire And Merseyside
+trust,RET,The Walton Centre NHS Foundation Trust,Cheshire and Merseyside
 trust,RA9,Torbay and South Devon NHS Foundation Trust,Peninsula
 trust,RWD,United Lincolnshire Hospitals NHS Trust,East Midlands
 trust,RRV,University College London Hospitals NHS Foundation Trust,North Central and North East London
@@ -128,17 +128,17 @@ trust,RA7,University Hospitals Bristol NHS Foundation Trust,Somerset Wiltshire A
 trust,RKB,University Hospitals Coventry and Warwickshire NHS Trust,West Midlands
 trust,RTG,University Hospitals of Derby and Burton NHS Foundation Trust,East Midlands
 trust,RWE,University Hospitals of Leicester NHS Trust,East Midlands
-trust,RTX,University Hospitals of Morecambe Bay NHS Foundation Trust,Lancashire And South Cumbria
+trust,RTX,University Hospitals of Morecambe Bay NHS Foundation Trust,Lancashire and South Cumbria
 trust,RJE,University Hospitals of North Midlands NHS Trust,West Midlands
 trust,RK9,University Hospitals Plymouth NHS Trust,Peninsula
 trust,RBK,Walsall Healthcare NHS Trust,West Midlands
-trust,RWW,Warrington and Halton Hospitals NHS Foundation Trust,Cheshire And Merseyside
+trust,RWW,Warrington and Halton Hospitals NHS Foundation Trust,Cheshire and Merseyside
 trust,RWG,West Hertfordshire Hospitals NHS Trust,East Of England
 trust,RGR,West Suffolk NHS Foundation Trust,East Of England
-trust,RYR,Western Sussex Hospitals NHS Foundation Trust,Surrey And Sussex
+trust,RYR,Western Sussex Hospitals NHS Foundation Trust,Surrey and Sussex
 trust,RA3,Weston Area Health NHS Trust,Somerset Wiltshire Avon & Gloucester
 trust,RKE,Whittington Health NHS Trust,North Central and North East London
-trust,RBL,Wirral University Teaching Hospital NHS Foundation Trust,Cheshire And Merseyside
+trust,RBL,Wirral University Teaching Hospital NHS Foundation Trust,Cheshire and Merseyside
 trust,RWP,Worcestershire Acute Hospitals NHS Trust,West Midlands
 trust,RRF,"Wrightington, Wigan and Leigh NHS Foundation Trust",Greater Manchester
 trust,RLQ,Wye Valley NHS Trust,West Midlands
