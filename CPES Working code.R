@@ -18,8 +18,8 @@ library(googledrive)
 
 ncpes<-read.csv("C:/Users/DEGAN001/Documents/GIT clones/COSD_Level2 App/NCPES Dashboard/CPESDataset.csv",sep = ",", na.strings = "NA",
                 stringsAsFactors = FALSE)
-#ncpes<-read.csv("https://raw.githubusercontent.com/Centre-for-Cancer-Outcomes/NCPES-Dashboard/master/CPESDataset.csv",sep = ",", na.strings = "NA",
-#                stringsAsFactors = FALSE)
+ncpes<-read.csv("https://raw.githubusercontent.com/Centre-for-Cancer-Outcomes/NCPES-Dashboard/master/CPESDataset.csv",sep = ",", na.strings = "NA",
+                stringsAsFactors = FALSE)
 ncpes$qnum <- as.numeric(gsub("[a-zA-Z ]", "", ncpes$Question.Number))
 ncpes$scored.percentage <-  ifelse(ncpes$scored.percentage > 1,ncpes$scored.percentage,ncpes$scored.percentage * 100)
 ncpes$Lower.95..confidence.interval <-ifelse(ncpes$Lower.95..confidence.interval >1,ncpes$Lower.95..confidence.interval,ncpes$Lower.95..confidence.interval *100)
@@ -39,10 +39,14 @@ ncpes$Number.of.responses <- as.numeric(gsub(",","",ncpes$Number.of.responses))
 levels(ncpes$Question.Number)
 regionlookup <- read.csv("https://raw.githubusercontent.com/Centre-for-Cancer-Outcomes/NCPES-Dashboard/master/CPES_geog_lookuptable.csv",
                          sep=",",header = TRUE)
+regionlookup$CALNCV18NM <- trimws(regionlookup$CALNCV18NM)
 
-ncpes <- left_join(ncpes,select(regionlookup,CCG18NM,CALNCV18NM), by = c("Trust.Name" ="CCG18NM" ))
+ncpes <- left_join(ncpes,select(regionlookup,CCG18CDH,CALNCV18NM), by = c("Trust.Code" ="CCG18CDH" ))
+
+unique((ncpes$CALNCV18NM))
 
 
+unique(factor(ncpes$Trust.Name[ncpes$Geog == "Trust" & trimws(ncpes$CALNCV18NM) == "North Central And North East London"]))
 ##ncpes q type 
 
 cpesqnum <- c("Q1","Q2","Q5","Q6","Q7","Q8","Q9","Q10","Q11","Q12","Q13","Q14","Q15","Q16","Q17","Q18","Q19","Q20",
