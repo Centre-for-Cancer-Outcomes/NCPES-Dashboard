@@ -340,22 +340,22 @@ ccg,99N,NHS Wiltshire CCG,Somerset Wiltshire Avon & Gloucester
 ccg,12F,NHS Wirral CCG,Cheshire and Merseyside
 ccg,06A,NHS Wolverhampton CCG,West Midlands
 ccg,06D,NHS Wyre Forest CCG,West Midlands
-ca,E56000005,Cheshire and Merseyside,Cheshire and Merseyside
-ca,E56000008,East Midlands,East Midlands
-ca,E56000009,East of England,East of England
-ca,E56000004,"Humber, Coast and Vale","Humber, Coast and Vale"
-ca,E56000011,Kent and Medway,Kent and Medway
-ca,E56000018,Lancashire and South Cumbria,Lancashire and South Cumbria
-ca,E57000001,National Cancer Vanguard: Greater Manchester,Greater Manchester
-ca,E57000002,National Cancer Vanguard: North Central and North East London,North Central and North East London
-ca,E57000003,National Cancer Vanguard: North West and South West London,North West and South West London
-ca,E56000017,North East and Cumbria,North East and Cumbria
-ca,E56000014,Peninsula,Peninsula
-ca,E56000015,Somerset Wiltshire Avon & Gloucester,Somerset Wiltshire Avon & Gloucester
-ca,E56000010,South East London,South East London
-ca,E56000006,"South Yorkshire, Bassetlaw, North Derbyshire and Hardwick","South Yorkshire, Bassetlaw, North Derbyshire and Hardwick"
-ca,E56000012,Surrey and Sussex,Surrey and Sussex
-ca,E56000013,Thames Valley,Thames Valley
-ca,E56000016,Wessex,Wessex
+ca,E56000005,Cheshire and Merseyside,North West
+ca,E56000008,East Midlands,East of England
+ca,E56000009,East of England,South East
+ca,E56000004,"Humber, Coast and Vale",Yorkshire and The Humber
+ca,E56000011,Kent and Medway,South East
+ca,E56000018,Lancashire and South Cumbria,North West
+ca,E57000001,National Cancer Vanguard: Greater Manchester,North West
+ca,E57000002,National Cancer Vanguard: North Central and North East London,London
+ca,E57000003,National Cancer Vanguard: North West and South West London,London
+ca,E56000017,North East and Cumbria,North East
+ca,E56000014,Peninsula,South West
+ca,E56000015,Somerset Wiltshire Avon & Gloucester,South West
+ca,E56000010,South East London,London
+ca,E56000006,"South Yorkshire, Bassetlaw, North Derbyshire and Hardwick",Yorkshire and The Humber
+ca,E56000012,Surrey and Sussex,South East
+ca,E56000013,Thames Valley,South West
+ca,E56000016,Wessex,South West
 ca,E56000007,West Midlands,West Midlands
-ca,E56000003,West Yorkshire and Harrogate,West Yorkshire and Harrogate
+ca,E56000003,West Yorkshire and Harrogate,Yorkshire and The Humber
