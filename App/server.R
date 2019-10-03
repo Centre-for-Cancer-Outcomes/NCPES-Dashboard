@@ -1,7 +1,7 @@
 ##server
 shinyServer(function(input, output,session) {
   ## dynamicaly update selection
-  observeEvent(input$Geog,updateSelectInput(session,"Cancer.Alliance","Cancer Alliance",
+  observeEvent(input$Geog,updateSelectInput(session,"Cancer.Alliance","Region",
                                             choices = unique(ncpes$CALNCV18NM[ncpes$Geog == input$Geog])))
   tolist <-reactive({
     list(input$Geog,input$Cancer.Alliance)
