@@ -7,9 +7,10 @@ shinyServer(function(input, output,session) {
     list(input$Geog,input$Cancer.Alliance)
   })
   
-  observeEvent(tolist(),updateSelectInput(session,"Trust.Name","Organization Name",
+  observeEvent(tolist(),updateSelectInput(session,"Trust.Name","Organisation Name",
                                             choices = unique(factor(ncpes$Trust.Name[ncpes$Geog == input$Geog & ncpes$CALNCV18NM == input$Cancer.Alliance]))))
  
+
   
   #####################################
   ##       Page 1- Overview          ##
@@ -20,7 +21,7 @@ shinyServer(function(input, output,session) {
     valueBox( 
       value = paste0(ncpes$scored.percentage[ncpes$Trust.Name == input$Trust.Name & ncpes$qnum == 59 & ncpes$Year == 2018 &
                                                ncpes$Gender == "Both" & ncpes$IMD == "All" & ncpes$Cancer.Type == "All Cancers" &
-                                               ncpes$adjusted.unadjusted.yearonyear == input$adjusted.unadjusted.yearonyear]),
+                                               ncpes$adjusted.unadjusted.yearonyear == input$adjusted.unadjusted.yearonyear],"/10"),
       "Overall, how would you rate your care?", icon = icon("thermometer-half"), color = "blue"
     )
   })
@@ -39,13 +40,15 @@ output$overallsigdif <- renderValueBox({
     paste0(ncpes$abrvperformance[ncpes$Trust.Name == input$Trust.Name & ncpes$qnum == 59 & ncpes$Year == 2018 &
                                      ncpes$Gender == "Both" & ncpes$IMD == "All" & ncpes$Cancer.Type == "All Cancers" &
                                      ncpes$adjusted.unadjusted.yearonyear == input$adjusted.unadjusted.yearonyear]),
-    "Overall Care compared to Expexted", icon = icon("hospital"), color = "purple", width = 8 
+    "Overall Care compared to Expected", icon = icon("hospital"), color = "purple", 
+    href = "https://www.ncpes.co.uk/reports/2018-reports/guidance-material-and-survey-materials-2018/4541-2018-national-cancer-patient-experience-survey-technical-documentation/file#page=9"
   )
 })  
+    
   
 ## row 3
 
-## graph
+  ## graph
   output$oveallgraph <- renderPlot({
     overviewbarplot <- ncpes %>%
       filter(ncpes$Geog == input$Geog & ncpes$Trust.Name == input$Trust.Name & ncpes$IMD == "All" & ncpes$Year == 2018 &
@@ -54,16 +57,16 @@ output$overallsigdif <- renderValueBox({
       select(Trust.Name,Question.Number,Performance,scored.percentage,Lower.95..confidence.interval,Upper.95..confidence.interval)
     
 if(input$adjusted.unadjusted.yearonyear == "adjusted"){
-      ggplot(overviewbarplot,aes(Question.Number,scored.percentage)) + geom_bar(stat = "identity",aes(fill = Performance)) +
+      ggplot(overviewbarplot,aes(reorder(Question.Number,desc(Question.Number)),scored.percentage)) + geom_bar(stat = "identity",aes(fill = Performance)) +
         geom_errorbar(aes(ymin = Lower.95..confidence.interval,ymax =Upper.95..confidence.interval), width = 0.2, position=position_dodge(0.9)) + 
         xlab("Question Number") + ylab("Score") + ggtitle("Orginization CPES Results") + 
-        theme(legend.position = "bottom")+ guides(fill=guide_legend(nrow=3,byrow=TRUE))+ scale_y_continuous(expand = c(0,0)) +coord_flip()
+        theme(legend.position = "bottom")+ guides(fill=guide_legend(nrow=3,byrow=TRUE))+ scale_y_continuous(expand = c(0,0)) + coord_flip()
 }else {
-      ggplot(overviewbarplot,aes(Question.Number,scored.percentage)) + geom_bar(stat = "identity", fill = "cornflowerblue") +
-        geom_errorbar(aes(ymin = Lower.95..confidence.interval,ymax =Upper.95..confidence.interval), width = 0.2, position=position_dodge(0.9)) + 
-        xlab("Question Number") + ylab("Score") + ggtitle("Orginization CPES Results") + 
-        theme(legend.position = "bottom")+ scale_y_continuous(expand = c(0,0)) +coord_flip()
-      }
+  ggplot(overviewbarplot,aes(reorder(Question.Number,desc(Question.Number)),scored.percentage)) + geom_bar(stat = "identity",aes(fill = Performance)) +
+    geom_errorbar(aes(ymin = Lower.95..confidence.interval,ymax =Upper.95..confidence.interval), width = 0.2, position=position_dodge(0.9)) + 
+    xlab("Question Number") + ylab("Score") + ggtitle("Orginization CPES Results") + 
+    theme(legend.position = "none")+ guides(fill=guide_legend(nrow=3,byrow=TRUE))+ scale_y_continuous(expand = c(0,0)) + coord_flip()
+}
 
  
   })
@@ -185,7 +188,7 @@ if(input$adjusted.unadjusted.yearonyear == "adjusted"){
     valueBox( 
       value = paste0(ncpes$scored.percentage[ncpes$Trust.Name == input$Trust.Name & ncpes$qnum == 59 & ncpes$Year == 2018 &
                                                  ncpes$Gender == "Both" & ncpes$IMD == "All" & ncpes$Cancer.Type == input$Cancer.Type &
-                                                 ncpes$adjusted.unadjusted.yearonyear == "unadjusted"]),
+                                                 ncpes$adjusted.unadjusted.yearonyear == "unadjusted"],"/10"),
       "Overall, how would you rate your care?", icon = icon("thermometer-half"), color = "blue"
     )
   })
@@ -196,7 +199,7 @@ if(input$adjusted.unadjusted.yearonyear == "adjusted"){
               ncpes$qnum != 59 & ncpes$cpesqtype %in% input$Question.Type) %>% 
      select(Trust.Name,Question.Number,Question.Text,scored.percentage)
    
-   ggplot(bycancergraph,aes(Question.Number,scored.percentage)) + geom_bar(stat = "identity", fill = "cornflowerblue") +
+   ggplot(bycancergraph,aes(reorder(Question.Number,desc(Question.Number)),scored.percentage)) + geom_bar(stat = "identity", fill = "cornflowerblue") +
      xlab("Question Number") + ylab("Score") + ggtitle("Orginization CPES Results") + 
      theme(legend.position = "bottom")+ scale_y_continuous(expand = c(0,0)) +coord_flip()
  })
@@ -323,7 +326,7 @@ output$bycancertable <- DT::renderDataTable({
         ncpes$scored.percentage[ncpes$Geog == input$Geog & ncpes$Trust.Name == input$Trust.Name & ncpes$IMD == "All" &
                                   ncpes$Gender == "Female" & ncpes$adjusted.unadjusted.yearonyear == "unadjusted" & 
                                   ncpes$Cancer.Type == "All Cancers"  & ncpes$Year == 2018 & ncpes$Question.Text == input$Question.Text2],
-      "Differance between Male and Female score",icon = icon("venus-mars"),color = "blue"
+      "Difference between Male and Female score",icon = icon("venus-mars"),color = "blue"
     ) 
     }else if (input$Demographic == "Deprivation") {
       valueBox(
@@ -333,7 +336,7 @@ output$bycancertable <- DT::renderDataTable({
           ncpes$scored.percentage[ncpes$Geog == input$Geog & ncpes$Trust.Name == input$Trust.Name & ncpes$IMD == 5 &
                                     ncpes$Gender == "Both" & ncpes$adjusted.unadjusted.yearonyear == "unadjusted" & 
                                     ncpes$Cancer.Type == "All Cancers"  & ncpes$Year == 2018 & ncpes$Question.Text == input$Question.Text2& is.na(ncpes$scored.percentage) != TRUE ],
-        "Differance between most and least deprived score",icon = icon("pound-sign"),color = "blue"
+        "Difference between most and least deprived score",icon = icon("pound-sign"),color = "blue"
       ) 
     }else if (input$Demographic == "Cancer Type"){
       valueBox(
@@ -343,7 +346,7 @@ output$bycancertable <- DT::renderDataTable({
           min(ncpes$scored.percentage[ncpes$Geog == input$Geog & ncpes$Trust.Name == input$Trust.Name & ncpes$IMD == "All" &
                                         ncpes$Gender == "Both" & ncpes$adjusted.unadjusted.yearonyear == "unadjusted" & 
                                         ncpes$Cancer.Type != "All Cancers"  & ncpes$Year == 2018 & ncpes$Question.Text == input$Question.Text2& is.na(ncpes$scored.percentage) != TRUE]),
-        "Range of scores between the differant cancer types",icon = icon("dna"),color = "blue"
+        "Range of scores between the different cancer types",icon = icon("dna"),color = "blue"
       ) 
     }  
     })
@@ -353,14 +356,14 @@ output$bycancertable <- DT::renderDataTable({
       value =  ncpes$Significance.test[ncpes$Geog == input$Geog & ncpes$Trust.Name == input$Trust.Name & ncpes$IMD == "All" &
                                   ncpes$Gender == "Male" & ncpes$adjusted.unadjusted.yearonyear == "unadjusted" & 
                                   ncpes$Cancer.Type == "All Cancers"  & ncpes$Year == 2018 & ncpes$Question.Text == input$Question.Text2],
-      "Is the differance between male and female performance Significant?",icon = icon("arrows-alt-v"),color = "purple"
+      "Is the difference between male and female performance Significant?",icon = icon("arrows-alt-v"),color = "purple"
       )
       }else if (input$Demographic == "Deprivation") {
          valueBox(
           value =  ncpes$Significance.test[ncpes$Geog == input$Geog & ncpes$Trust.Name == input$Trust.Name & ncpes$IMD == 1 &
                                              ncpes$Gender == "Both" & ncpes$adjusted.unadjusted.yearonyear == "unadjusted" & 
                                              ncpes$Cancer.Type == "All Cancers"  & ncpes$Year == 2018 & ncpes$Question.Text == input$Question.Text2],
-          "Is the differance most and least deprived score Significant?",icon = icon("arrows-alt-v"),color = "purple"
+          "Is the difference between the most and least deprived score Significant?",icon = icon("arrows-alt-v"),color = "purple"
         ) 
       }else if (input$Demographic == "Cancer Type"){
   
@@ -368,7 +371,7 @@ output$bycancertable <- DT::renderDataTable({
           value =  sum(ncpes$Number.of.responses[ncpes$Geog == input$Geog & ncpes$Trust.Name == input$Trust.Name & ncpes$IMD == "All" &
                                                  ncpes$Gender == "Both" & ncpes$adjusted.unadjusted.yearonyear == "unadjusted" & 
                                                  ncpes$Cancer.Type != "All Cancers"  & ncpes$Year == 2018 & ncpes$Question.Text == input$Question.Text2]),
-          "Total Number of respocezs across the cancer types",icon = icon("users"),color = "purple"
+          "Total Number of responses across the cancer types",icon = icon("users"),color = "purple"
         )
   
       }

@@ -74,3 +74,5 @@ ncpes$Significance.test[ncpes$Significance.test == "Not sig"] <- "Not Significan
 
 ## set theme for ggplot
 theme_set(theme_classic())
+## data swet for reverseing graph
+ncpesreverse <- ncpes %>% select(Question.Number,qnum) %>% filter(qnum != 59)

@@ -10,9 +10,9 @@ header <- dashboardHeader(title = "NCPES 2018 Results",
 
 
 sidebar <- dashboardSidebar(
-                             selectInput("Geog","Organization Type",choices = unique(factor(ncpes$Geog)), selected = "Trust"),
+                             selectInput("Geog","Organisation Type",choices = unique(factor(ncpes$Geog)), selected = "Trust"),
                              selectInput("Cancer.Alliance","Region", choices = "",selected = ""  ),
-                             selectInput("Trust.Name","Organization Name", choices = "",selected = ""),
+                             selectInput("Trust.Name","Organisation Name", choices = "",selected = ""),
                              pickerInput("Question.Type","Question Type",choices = unique(ncpes$cpesqtype), 
                                          options = list(
                                            `actions-box` = TRUE, 
@@ -74,8 +74,9 @@ body <- dashboardBody(
                                            no = tags$i(class = "fa fa-square-o", 
                                                        style = "color: steelblue")))), "", status = "info" ),
            fluidRow(
-             valueBoxOutput("cancertypenumber"),
-             valueBoxOutput("cancertypecare")
+             valueBoxOutput("cancertypecare"),
+             valueBoxOutput("cancertypenumber")
+             
            ),
            fluidRow(
              box(plotOutput("bycancergraph", height = 850),title = "NCPES Results",status = "primary",solidHeader = TRUE),
@@ -99,10 +100,10 @@ body <- dashboardBody(
                                      title = "CPES Question", status = "info" 
                    )),
           fluidRow(
-           box(plotOutput("compgraph"),"Comparison Graph", status = "primary", solidHeader = TRUE , width = 12)
+           box(plotOutput("compgraph"),title = "Comparison Graph", status = "primary", solidHeader = TRUE , width = 12)
           ),
           fluidRow(
-            box(DT::dataTableOutput("comtable"),"CPES Data table", status = "success", solidHeader = TRUE),
+            box(DT::dataTableOutput("comtable"),title = "CPES Data table", status = "success", solidHeader = TRUE, width = 6),
             valueBoxOutput("compvalueboxdif"),
             valueBoxOutput("compvalueboxsig")
           )

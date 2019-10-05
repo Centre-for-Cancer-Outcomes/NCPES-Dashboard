@@ -147,4 +147,4 @@ rsconnect::deployApp("C:/Users/david/Documents/GitHub/Dashboard/App")
 "C:/Users/david/Documents/GitHub/Dashboard/App"
 
 
-
+ncpesreverse <- ncpes %>% select(Question.Number,qnum) %>% filter(qnum != 59)
