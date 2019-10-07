@@ -40,7 +40,8 @@ body <- dashboardBody(
                                             style = "color: steelblue"),
                                no = tags$i(class = "fa fa-square-o", 
                                            style = "color: steelblue")),justified = TRUE),
-          title = "Data Type", status = "info" )
+          title = "Data Type", status = "info" ),
+       box(print("National Data is only available as unadjusted" ),background = "maroon")
        ),
      fluidRow(
        valueBoxOutput("overallnumber"),
@@ -53,12 +54,10 @@ body <- dashboardBody(
      )),
     tabItem(tabName = "timeseries",
             fluidRow(
-       box(selectInput("Question.Text","Question",choices = unique(factor(ncpes$Question.Text[order(ncpes$Question.Number)])),
-                       selected = "Before you were told you needed to go to hospital about cancer, how many times did you see
-                       your GP (family doctor) about the health problem caused by cancer?" )
-       ,width = 10)),
+       box(selectInput("Question.Text","Select Question",choices = "",
+                       selected = "" ),width = 10)),
        fluidRow(
-         box(plotOutput("yearonyeargraph"), title = "CPES Results Over Time",status = "primary",solidHeader = TRUE),
+         box(plotOutput("yearonyeargraph"), title = "CPES Question Results Over Time",status = "primary",solidHeader = TRUE),
                valueBoxOutput("yearonyearcomp"),
          valueBoxOutput("yearonyearlongcomp")
                ),
@@ -94,9 +93,8 @@ body <- dashboardBody(
                                            no = tags$i(class = "fa fa-square-o", 
                                                        style = "color: steelblue")),justified = TRUE),
                        title = "Data Type", status = "info" ),
-                   box(selectInput("Question.Text2","Question",choices = unique(factor(ncpes$Question.Text[order(ncpes$Question.Number)])),
-                                   selected = "Before you were told you needed to go to hospital about cancer, how many times did you see
-                       your GP (family doctor) about the health problem caused by cancer?" ),
+                   box(selectInput("Question.Text2","Select Question",choices = "",
+                                   selected = "" ),
                                      title = "CPES Question", status = "info" 
                    )),
           fluidRow(

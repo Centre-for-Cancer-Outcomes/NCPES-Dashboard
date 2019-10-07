@@ -10,7 +10,14 @@ shinyServer(function(input, output,session) {
   observeEvent(tolist(),updateSelectInput(session,"Trust.Name","Organisation Name",
                                             choices = unique(factor(ncpes$Trust.Name[ncpes$Geog == input$Geog & ncpes$CALNCV18NM == input$Cancer.Alliance]))))
  
-
+ observeEvent(input$Question.Type, updateSelectInput(session,"Question.Text","Select Question",
+                                                     choices =  unique(factor(ncpes$Question.Text[ncpes$Question.Type == input$Question.Type
+                                                                                                  & order(ncpes$Question.Number)]))))
+  
+  observeEvent(input$Question.Type,updateSelectInput(session,"Question.Text2","Select Question",
+                                                     choices =  unique(factor(ncpes$Question.Text[ncpes$Question.Type == input$Question.Type
+                                                                                                  & order(ncpes$Question.Number)]))))
+  
   
   #####################################
   ##       Page 1- Overview          ##
@@ -103,7 +110,7 @@ if(input$adjusted.unadjusted.yearonyear == "adjusted"){
       value = paste0(ncpes$Significant.Change.2017.2018[ncpes$Trust.Name == input$Trust.Name & ncpes$Year == 2018 &
                                                ncpes$Gender == "Both" & ncpes$IMD == "All" & ncpes$Cancer.Type == "All Cancers" &
                                                ncpes$adjusted.unadjusted.yearonyear == "yearonyear" & ncpes$Question.Text == input$Question.Text]),
-      "Has the Question Score changes based on the previous CPES", icon = icon("calendar-alt"), color = "purple"
+      "Has the Question Score changes based on 2017 CPES",  color = "purple"
     )
   })
   
@@ -112,7 +119,7 @@ if(input$adjusted.unadjusted.yearonyear == "adjusted"){
         value = paste0(ncpes$SignificantChangeOverallyears[ncpes$Trust.Name == input$Trust.Name &  ncpes$Year == 2018 &
                                                             ncpes$Gender == "Both" & ncpes$IMD == "All" & ncpes$Cancer.Type == "All Cancers" &
                                                             ncpes$adjusted.unadjusted.yearonyear == "yearonyear" & ncpes$Question.Text == input$Question.Text]),
-        "Has the Question Score changes based on earlier CPES", icon = icon("chart-line"), color = "green"
+        "Has the Question Score changes based on earlier CPES",  color = "green"
       ) 
   })  
   
@@ -356,14 +363,14 @@ output$bycancertable <- DT::renderDataTable({
       value =  ncpes$Significance.test[ncpes$Geog == input$Geog & ncpes$Trust.Name == input$Trust.Name & ncpes$IMD == "All" &
                                   ncpes$Gender == "Male" & ncpes$adjusted.unadjusted.yearonyear == "unadjusted" & 
                                   ncpes$Cancer.Type == "All Cancers"  & ncpes$Year == 2018 & ncpes$Question.Text == input$Question.Text2],
-      "Is the difference between male and female performance Significant?",icon = icon("arrows-alt-v"),color = "purple"
+      "Is the difference between male and female performance Significant?",color = "purple"
       )
       }else if (input$Demographic == "Deprivation") {
          valueBox(
           value =  ncpes$Significance.test[ncpes$Geog == input$Geog & ncpes$Trust.Name == input$Trust.Name & ncpes$IMD == 1 &
                                              ncpes$Gender == "Both" & ncpes$adjusted.unadjusted.yearonyear == "unadjusted" & 
                                              ncpes$Cancer.Type == "All Cancers"  & ncpes$Year == 2018 & ncpes$Question.Text == input$Question.Text2],
-          "Is the difference between the most and least deprived score Significant?",icon = icon("arrows-alt-v"),color = "purple"
+          "Is the difference between the most and least deprived score Significant?",color = "purple"
         ) 
       }else if (input$Demographic == "Cancer Type"){
   
