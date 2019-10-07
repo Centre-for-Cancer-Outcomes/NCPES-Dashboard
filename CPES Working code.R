@@ -148,3 +148,11 @@ rsconnect::deployApp("C:/Users/david/Documents/GitHub/Dashboard/App")
 
 
 ncpesreverse <- ncpes %>% select(Question.Number,qnum) %>% filter(qnum != 59)
+
+ncpes$cpesqtype <- factor(ncpes$cpesqtype, levels = c("Seeing your GP","Diagnostic Test","Finding out about your condition ",
+                                                      "Deciding the best treatment","Clinical Nurse Specialist","Support","Operations",
+                                                      "Hospital care as an Inpatient ","Hospital casre as a day paytient/outpatient","Home care and support",
+                                                      "Care from your GP", "Your overall NHS care"))
+
+
+unique(ncpes$Question.Text[ncpes$cpesqtype %in%c("Seeing your GP")])

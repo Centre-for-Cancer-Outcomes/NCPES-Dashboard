@@ -72,10 +72,7 @@ ncpes$Question.Number <- factor(ncpes$Question.Number, levels = c("Q1","Q2","Q5"
 ncpes$Significance.test[ncpes$Significance.test == "Sig"] <- "Significant"
 ncpes$Significance.test[ncpes$Significance.test == "Not sig"] <- "Not Significant"
 
-ncpes$cpesqtype <- factor(ncpes$cpesqtype, levels = c("Seeing your GP","Seeing your GP","Diagnostic Test","Finding out about your condition ",
-                                                      "Deciding the best treatment","Clinical Nurse Specialist","Support","Operations",
-                                                      "Hospital care as an Inpatient ","Hospital casre as a day paytient/outpatient","Home care and support",
-                                                      "Care from your GP", "Your overall NHS care"))
+
 
 ## set theme for ggplot
 theme_set(theme_classic())

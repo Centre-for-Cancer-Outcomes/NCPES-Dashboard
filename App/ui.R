@@ -13,7 +13,7 @@ sidebar <- dashboardSidebar(
                              selectInput("Geog","Organisation Type",choices = unique(factor(ncpes$Geog)), selected = "Trust"),
                              selectInput("Cancer.Alliance","Region", choices = "",selected = ""  ),
                              selectInput("Trust.Name","Organisation Name", choices = "",selected = ""),
-                             pickerInput("Question.Type","Question Type",choices = unique(ncpes$cpesqtype), 
+                             pickerInput("Question.Type","Question Type",choices = unique(ncpes$cpesqtype[order(ncpes$Question.Number)]), 
                                          options = list(
                                            `actions-box` = TRUE, 
                                            size = 10,
@@ -41,7 +41,8 @@ body <- dashboardBody(
                                no = tags$i(class = "fa fa-square-o", 
                                            style = "color: steelblue")),justified = TRUE),
           title = "Data Type", status = "info" ),
-       box(print("National Data is only available as unadjusted" ),background = "maroon")
+       box(print("National Data is only available as unadjusted. To see the methodology used to calculate
+                 expected values then click on the purple vale box. " ),background = "maroon")
        ),
      fluidRow(
        valueBoxOutput("overallnumber"),
@@ -62,7 +63,7 @@ body <- dashboardBody(
          valueBoxOutput("yearonyearlongcomp")
                ),
       fluidRow(
-         box(plotOutput("yearonyeargraphnum"), title = "CPES Number of Responses Over Time",status = "primary",solidHeader = TRUE),
+         box(plotOutput("yearonyeargraphnum"), title = "CPES Question Number of Responses Over Time",status = "primary",solidHeader = TRUE),
       box(DT::dataTableOutput("yearonyeardatatable"),title = "Year on Year Results Data Tabel", status = "success", solidHeader = TRUE)
        )),
     tabItem(tabName = "cancer",

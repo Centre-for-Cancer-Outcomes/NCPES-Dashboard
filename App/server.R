@@ -11,14 +11,10 @@ shinyServer(function(input, output,session) {
                                             choices = unique(factor(ncpes$Trust.Name[ncpes$Geog == input$Geog & ncpes$CALNCV18NM == input$Cancer.Alliance]))))
  
  observeEvent(input$Question.Type, updateSelectInput(session,"Question.Text","Select Question",
-                                                     choices =  unique(factor(ncpes$Question.Text[ncpes$Question.Type == input$Question.Type
-                                                                                                  & order(ncpes$Question.Number)]))))
+                                                     choices =  unique(ncpes$Question.Text[ncpes$cpesqtype %in% input$Question.Type])))
   
   observeEvent(input$Question.Type,updateSelectInput(session,"Question.Text2","Select Question",
-                                                     choices =  unique(factor(ncpes$Question.Text[ncpes$Question.Type == input$Question.Type
-                                                                                                  & order(ncpes$Question.Number)]))))
-  
-  
+                                                     choices =  unique(ncpes$Question.Text[ncpes$cpesqtype %in% input$Question.Type])))
   #####################################
   ##       Page 1- Overview          ##
   #####################################
