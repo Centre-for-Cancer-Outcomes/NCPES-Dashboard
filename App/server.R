@@ -64,12 +64,18 @@ if(input$adjusted.unadjusted.yearonyear == "adjusted"){
         geom_errorbar(aes(ymin = Lower.95..confidence.interval,ymax =Upper.95..confidence.interval), width = 0.2, position=position_dodge(0.9)) + 
         xlab("Question Number") + ylab("Score") + ggtitle("Orginization CPES Results") + 
         theme(legend.position = "bottom")+ guides(fill=guide_legend(nrow=3,byrow=TRUE))+ scale_y_continuous(expand = c(0,0)) + coord_flip()
+  + scale_fill_manual(breaks = c("Adjusted Score above Expected Upper Range","Adjusted Score between Expected Upper and Lower Ranges",
+                                 "Adjusted Score below Expected Lower Range"),
+                      values = c("#00BA38","#619CFF","#F8766D"))
 }else {
   ggplot(overviewbarplot,aes(reorder(Question.Number,desc(Question.Number)),scored.percentage)) + geom_bar(stat = "identity",aes(fill = Performance)) +
     geom_errorbar(aes(ymin = Lower.95..confidence.interval,ymax =Upper.95..confidence.interval), width = 0.2, position=position_dodge(0.9)) + 
     xlab("Question Number") + ylab("Score") + ggtitle("Orginization CPES Results") + 
     theme(legend.position = "none")+ guides(fill=guide_legend(nrow=3,byrow=TRUE))+ scale_y_continuous(expand = c(0,0)) + coord_flip()
-}
+  + scale_fill_manual(breaks = c("Adjusted Score above Expected Upper Range","Adjusted Score between Expected Upper and Lower Ranges",
+                                 "Adjusted Score below Expected Lower Range"),
+                      values = c("#00BA38","#619CFF","#F8766D"))
+  }
 
  
   })
@@ -205,6 +211,9 @@ if(input$adjusted.unadjusted.yearonyear == "adjusted"){
    ggplot(bycancergraph,aes(reorder(Question.Number,desc(Question.Number)),scored.percentage)) + geom_bar(stat = "identity", fill = "cornflowerblue") +
      xlab("Question Number") + ylab("Score") + ggtitle("Orginization CPES Results") + 
      theme(legend.position = "bottom")+ scale_y_continuous(expand = c(0,0)) +coord_flip()
+   + scale_fill_manual(breaks = c("Adjusted Score above Expected Upper Range","Adjusted Score between Expected Upper and Lower Ranges",
+                                  "Adjusted Score below Expected Lower Range"),
+                       values = c("#00BA38","#619CFF","#F8766D"))
  })
  
 output$bycancertable <- DT::renderDataTable({
