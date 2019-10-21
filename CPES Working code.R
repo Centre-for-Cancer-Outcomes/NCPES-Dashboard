@@ -153,6 +153,8 @@ ncpes$cpesqtype <- factor(ncpes$cpesqtype, levels = c("Seeing your GP","Diagnost
                                                       "Deciding the best treatment","Clinical Nurse Specialist","Support","Operations",
                                                       "Hospital care as an Inpatient ","Hospital casre as a day paytient/outpatient","Home care and support",
                                                       "Care from your GP", "Your overall NHS care"))
-
++ scale_fill_manual(breaks = c("Adjusted Score above Expected Upper Range","Adjusted Score between Expected Upper and Lower Ranges",
+                               "Adjusted Score below Expected Lower Range"),
+                    values = c("#00BA38","#619CFF","#F8766D"))
 
 unique(ncpes$Question.Text[ncpes$cpesqtype %in%c("Seeing your GP")])
