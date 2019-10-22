@@ -15,6 +15,7 @@ library(shinyjs)
 library(readr)
 library(httr)
 library(googledrive)
+library(RColorBrewer)
 
 ncpes<-read.csv("C:/Users/DEGAN001/Documents/GIT clones/COSD_Level2 App/NCPES Dashboard/CPESDataset.csv",sep = ",", na.strings = "NA",
                 stringsAsFactors = FALSE)
@@ -89,7 +90,9 @@ ncpes$scored.percentage[ncpes$Trust.Name == trust & ncpes$qnum == 59 & ncpes$Yea
                           ncpes$Gender == "Both" & ncpes$IMD == "All" & ncpes$Cancer.Type == "All Cancers" &
                           ncpes$adjusted.unadjusted.yearonyear == "adjusted"]
 ## summary bar chart
-trust <- "Whittington Health NHS Trust" 
+unique(ncpes$Trust.Name)
+trust <- "University College London Hospitals NHS Foundation Trust" 
+trust <-"Whittington Health NHS Trust"
 theme_set(theme_classic())
 
 overviewbarplot <- ncpes %>%
@@ -98,17 +101,20 @@ overviewbarplot <- ncpes %>%
                          ncpes$qnum != 59) %>% 
                   select(Trust.Name,Question.Number,Performance,scored.percentage,Lower.95..confidence.interval,Upper.95..confidence.interval)
                   
-if("unadjusted" == "adjusted"){
+if("adjusted" == "adjusted"){
 ggplot(overviewbarplot,aes(Question.Number,scored.percentage)) + geom_bar(stat = "identity",aes(fill = Performance)) +
                   geom_errorbar(aes(ymin = Lower.95..confidence.interval,ymax =Upper.95..confidence.interval), width = 0.2, position=position_dodge(0.9)) + 
                   xlab("Question Number") + ylab("Score") + ggtitle("Orginization CPES Results") + 
-                  theme(legend.position = "bottom")+ guides(fill=guide_legend(nrow=3,byrow=TRUE))+ scale_y_continuous(expand = c(0,0)) +coord_flip()
+                  theme(legend.position = "bottom")+ guides(fill=guide_legend(nrow=3,byrow=TRUE))+ scale_y_continuous(expand = c(0,0)) +coord_flip() + scale_fill_manual("legend", values = c("Adjusted Score above Expected Upper Range" = "#00BA38", 
+                                                                                                                                                                                              "Adjusted Score between Expected Upper and Lower Ranges" = "#619CFF",
+                                                                                                                                                                                              "Adjusted Score below Expected Lower Range" = "#F8766D"))
 }else {
 
-overviewtablelot(overviewbarplot,aes(Question.Number,scored.percentage)) + geom_bar(stat = "identity", fill = "cornflowerblue") +
+ggplot(overviewbarplot,aes(Question.Number,scored.percentage)) + geom_bar(stat = "identity", fill = "cornflowerblue") +
     geom_errorbar(aes(ymin = Lower.95..confidence.interval,ymax =Upper.95..confidence.interval), width = 0.2, position=position_dodge(0.9)) + 
     xlab("Question Number") + ylab("Score") + ggtitle("Orginization CPES Results") + 
-    theme(legend.position = "bottom")+ scale_y_continuous(expand = c(0,0)) +coord_flip()
+    theme(legend.position = "bottom")+ scale_y_continuous(expand = c(0,0)) +coord_flip() + scale_fill_manual(values = c("#00BA38","#F8766D","#619CFF"))
+                                                                                                             
 }
 overviewbarplot   
 
@@ -156,5 +162,9 @@ ncpes$cpesqtype <- factor(ncpes$cpesqtype, levels = c("Seeing your GP","Diagnost
 + scale_fill_manual(breaks = c("Adjusted Score above Expected Upper Range","Adjusted Score between Expected Upper and Lower Ranges",
                                "Adjusted Score below Expected Lower Range"),
                     values = c("#00BA38","#619CFF","#F8766D"))
+scale_fill_manual("legend", values = c("Adjusted Score above Expected Upper Range" = "black", 
+                                       "Adjusted Score between Expected Upper and Lower Ranges" = "orange",
+                                       "Adjusted Score below Expected Lower Range" = "blue"))
+
 
 unique(ncpes$Question.Text[ncpes$cpesqtype %in%c("Seeing your GP")])
