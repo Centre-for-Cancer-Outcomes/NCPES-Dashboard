@@ -68,7 +68,7 @@ if(input$adjusted.unadjusted.yearonyear == "adjusted"){
                                                                                                                                                                                        "Adjusted Score below Expected Lower Range" = "#F8766D"))
   
 }else {
-  ggplot(overviewbarplot,aes(reorder(Question.Number,desc(Question.Number)),scored.percentage)) + geom_bar(stat = "identity",aes(fill = "#619CFF")) +
+  ggplot(overviewbarplot,aes(reorder(Question.Number,desc(Question.Number)),scored.percentage)) + geom_bar(stat = "identity",fill = "#619CFF") +
     geom_errorbar(aes(ymin = Lower.95..confidence.interval,ymax =Upper.95..confidence.interval), width = 0.2, position=position_dodge(0.9)) + 
     xlab("Question Number") + ylab("Score") + ggtitle("Organisation CPES Results") + 
     theme(legend.position = "none")+ guides(fill=guide_legend(nrow=3,byrow=TRUE))+ scale_y_continuous(expand = c(0,0)) + coord_flip()
