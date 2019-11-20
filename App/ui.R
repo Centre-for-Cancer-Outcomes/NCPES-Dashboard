@@ -25,7 +25,7 @@ sidebar <- dashboardSidebar(
                              menuItem("By Cancer",tabName = "cancer",icon = icon("x-ray")),
                              menuItem("Comparison", tabName = "demographic",icon = icon("venus-mars"))
                              ),
-                             helpText("Devloped by The North Central and East London Centre for Cancer Outcomes")
+                             helpText("Developed by The North Central and East London Centre for Cancer Outcomes")
 )
 
 
